@@ -1,0 +1,360 @@
+.rows {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 0 0 40px 0;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.item {
+    width: 100%;
+    min-height: 100%;
+    padding: 0 12px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px 0 rgba(54, 56, 64, 0.1);
+    box-sizing: border-box;
+}
+
+.summary-item {
+    composes: item;
+    display: flex;
+    flex-direction: column;
+    padding: 0 12px 12px 12px;
+}
+
+.two-columns .item {
+    width: calc((100% - 40px) / 2);
+}
+
+.text {
+    position: relative;
+    font-weight: 600;
+    color: #636872;
+    font-size: 16px;
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    border-bottom: 1px solid #f2f2f2;
+    padding: 12px 0;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.chart {
+    margin-top: 18px;
+    display: flex;
+}
+
+.summary-chart {
+    composes: chart;
+    flex: 1;
+}
+
+.monthly-marketing-legend {
+    display: inline-block;
+    width: 50%;
+    padding: 0 10px 0 0;
+    box-sizing: border-box;
+}
+
+.monthly-marketing-chart {
+    width: 50%;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    margin-left: 6px;
+}
+
+.history-grow {
+    font-size: 13px;
+    font-weight: 500;
+    color: #24b10e;
+    margin-right: 10px;
+    margin-left: 2px;
+    align-self: center;
+}
+
+.history-grow[data-decline] {
+    color: red;
+}
+
+.history-arrow {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 6px 9px 6px;
+    border-color: transparent transparent #24b10e transparent;
+    align-self: center;
+}
+
+.history-arrow[data-decline] {
+    transform: rotate(180deg);
+    border-color: transparent transparent red transparent;
+}
+
+.father-channel-box {
+    display: flex;
+    margin: 5px 0 0 0;
+    font-size: 14px;
+}
+
+.father-channel-thumbnail {
+    display: inline-flex;
+    width: 8px;
+    height: 8px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 50%;
+    margin: 2px 0 0 0;
+}
+
+.father-channel-text {
+    width: 135px;
+    display: inline;
+    padding: 0 0 0 4px;
+    text-transform: capitalize;
+}
+
+.father-channel-value {
+    width: 70px;
+    font-weight: 600;
+}
+
+.father-channel-percentage {
+    width: 50px;
+    color: #7f8fa4;
+}
+
+.performance {
+    padding: 12px;
+    align-items: stretch;
+}
+
+.performance .text {
+    border: none;
+}
+
+.column {
+    position: relative;
+    width: 33.33%;
+    padding: 0 35px;
+    border-right: solid 1px #d9d9d9;
+}
+
+.column:last-child {
+    border-right: none;
+}
+
+.column-header {
+    display: flex;
+    position: relative;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.column:hover .advanced {
+    visibility: visible;
+}
+
+.column:hover .settings {
+    visibility: visible;
+}
+
+.column.active::after{
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid white;
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: calc(50% - 20px);
+}
+
+.column-body {
+    margin-top: 18px;
+}
+
+.advanced {
+    background: url(/assets/mode-circular-button.svg) center center no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    visibility: hidden;
+    position: absolute;
+    right: -50px;
+    align-self: center;
+}
+
+.settings-container {
+    position: relative;
+}
+
+.settings {
+    background: url(/assets/settings-hollow.svg) center center no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    visibility: hidden;
+    position: absolute;
+    left: calc(100% - 10px);
+}
+
+.time-text {
+    font-size: 12px;
+    font-weight: 500;
+    color: #9b9b9b;
+    align-self: center;
+    position: absolute;
+}
+
+.curved-arrow {
+    background: url(/assets/curve-arrow.svg) center center no-repeat;
+    background-size: contain;
+    width: 21px;
+    height: 21px;
+    margin-right: 4px;
+}
+
+.grid {
+    display: grid;
+    grid-template: 105px 105px / 50% 50%;
+    width: 100%;
+}
+
+.quarter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.quarter:nth-child(2n) {
+    padding-left: 47px;
+    border-left: 1px solid #f2f2f2;
+}
+
+.quarter:nth-child(n+3) {
+    border-top: 1px solid #f2f2f2;
+}
+
+.quarter-text {
+    color: #636872;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.quarter-number {
+    display: flex;
+    justify-content: flex-start;
+    color: #354052;
+    margin: 3px 0;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.current-performance .text {
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.current-performance-content {
+    padding: 15px;
+}
+
+.current-performance-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.snapshot {
+    margin: 17px 0 0 0;
+}
+
+.snapshot-text {
+    composes: quarter-text;
+    padding-top: 0;
+    justify-content: flex-start;
+}
+
+.snapshot-number {
+    composes: quarter-number;
+    justify-content: flex-start;
+}
+
+.mini-funnel-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-width: 260px;
+}
+
+.mini-funnel-row {
+    margin: 7px 0 0 0;
+}
+
+.mini-funnel-text {
+    position: absolute;
+    left: 0;
+    align-self: center;
+    font-size: 14px;
+}
+
+.mini-funnel-stage {
+    position: relative;
+    height: 21px;
+    border-radius: 8px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 22px;
+}
+
+.mini-funnel-row:nth-child(1) .mini-funnel-stage {
+    width: 165px;
+    background-color: #189aca;
+}
+
+.mini-funnel-row:nth-child(2) .mini-funnel-stage {
+    width: 135px;
+    background-color: #56b5d9;
+}
+
+.mini-funnel-row:nth-child(3) .mini-funnel-stage {
+    width: 105px;
+    background-color: #a8daec;
+}
+
+.mini-funnel-row:nth-child(4) .mini-funnel-stage {
+    width: 75px;
+    background-color: #70d972;
+}
+
+.mini-funnel-row:nth-child(5) .mini-funnel-stage {
+    width: 45px;
+    background-color: #3cca3f;
+}
+
+.mini-funnel-conv {
+    position: absolute;
+    left: calc(100% - 8px);
+    top: 100%;
+    display: flex;
+    font-size: 12px;
+    font-weight: 300;
+    align-items: center;
+    color: #4b515e;
+}
+
+.stats .stat-square-container {
+    width: calc((100% - 120px) / 4);
+}

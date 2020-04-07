@@ -1,0 +1,8 @@
+.wrap {
+    margin: 0 25px;
+    padding: 0 6px;
+    overflow-x: auto;
+    position: relative;
+
+    height: 1000px;
+}

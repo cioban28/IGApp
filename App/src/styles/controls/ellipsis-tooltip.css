@@ -1,0 +1,11 @@
+.container {
+  display: block;
+  width: 100%;
+}
+
+.with-ellipsis {
+  width: calc(100%);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}

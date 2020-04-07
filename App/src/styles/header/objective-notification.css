@@ -1,0 +1,33 @@
+.text {
+    font-size: 14px;
+    color: #354052;
+    display: inline-flex;
+    white-space: pre;
+    margin-right: 3px;
+}
+
+.text-bold {
+    composes: text;
+    font-weight: 600;
+}
+
+.text-color {
+    composes: text;
+    font-weight: 600;
+    color: #24b10e;
+}
+
+.objective-icon {
+    width: 20px;
+    height: 20px;
+    background: url(/assets/success_bltp.svg) center center no-repeat;
+    background-size: contain;
+    position: relative;
+    top: -10px;
+    left: 25px;
+}
+
+.objective-icon[data-fail] {
+    background: url(/assets/passed-objective.svg) center center no-repeat;
+    background-size: contain;
+}

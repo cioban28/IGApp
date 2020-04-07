@@ -1,0 +1,26 @@
+.inner {
+    overflow: visible;
+}
+
+.content {
+    padding: 35px 25px;
+    margin: 0 0;
+}
+
+.arrow {
+    background: url(/assets/right-arrow-outline.svg) center center no-repeat;
+    background-size: contain;
+    width: 92px;
+    height: 35px;
+}
+
+.label {
+    margin: 6px 0;
+    width: 220px;
+    white-space: pre-line;
+    text-transform: capitalize;
+}
+
+.owners-label {
+    margin-top: 48px;
+}

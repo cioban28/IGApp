@@ -1,0 +1,275 @@
+@import "./global/mixins.css";
+
+.box {
+  width: 279px;
+  position: fixed;
+  top: 80px;
+  left: 0;
+  bottom: 0;
+  background: #273142;
+  z-index: 12;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  will-change: transform;
+}
+
+.box::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 1px;
+  background: #273142;
+}
+
+.logo {
+  background: #273142 url(/assets/logo.png) center center no-repeat;
+  background-size: 92px auto;
+
+  width: 279px;
+  height: 80px;
+  display: none;
+}
+
+.menu {
+  position: relative;
+  padding-right: 1px;
+  z-index: 1;
+  height: 100%;
+}
+
+.menu-item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  color: #FFF;
+  padding: 0px 20px;
+}
+
+.collapsed-menu-item {
+  composes: menu-item;
+}
+
+.collapsed-menu-item-selected {
+  background-color: rgba(112, 126, 167, 0.12);
+}
+
+.menu-item:hover {
+  background-color: #4e5a7e;
+  color: #ffffff;
+}
+
+.menu-item-selected {
+  composes: menu-item;
+
+  background-color: #4e5a7e;
+  color: #ffffff;
+}
+
+.menu-item-icon {
+  width: 23px;
+  height: 23px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  flex-shrink: 0;
+}
+
+.sub-menu-item-icon {
+  margin-left: 46px;
+  width: 18px;
+  height: 18px;
+  background: none left center no-repeat;
+  background-size: contain;
+  flex-shrink: 0;
+}
+
+.menu-item-text {
+  font-size: 14px;
+  font-weight: 500;
+  height: 14px;
+  letter-spacing: 0.010em;
+  margin-left: 8px;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+/*.menu-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #2975ac;
+}*/
+
+@mixin icon-nodpi sidebar:dashboard, /assets/sidebar-icons/dashboard;
+@mixin icon-nodpi sidebar:dashboard-selected, /assets/sidebar-icons/dashboard-selected;
+@mixin icon-nodpi sidebar:preferences, /assets/sidebar-icons/preferences;
+@mixin icon-nodpi sidebar:indicators, /assets/sidebar-icons/indicators;
+@mixin icon-nodpi sidebar:company, /assets/sidebar-icons/company;
+@mixin icon-nodpi sidebar:planContainer, /assets/sidebar-icons/plan;
+@mixin icon-nodpi sidebar:profile, /assets/sidebar-icons/profile;
+@mixin icon-nodpi sidebar:target-audience, /assets/sidebar-icons/target-audience;
+@mixin icon-nodpi sidebar:planned-vs-actual, /assets/sidebar-icons/planned-vs-actual;
+@mixin icon-nodpi sidebar:campaigns, /assets/sidebar-icons/promote;
+@mixin icon-nodpi sidebar:campaigns-selected, /assets/sidebar-icons/promote-selected;
+@mixin icon-nodpi sidebar:analyze, /assets/sidebar-icons/analyze;
+@mixin icon-nodpi sidebar:analyze-selected, /assets/sidebar-icons/analyze-selected;
+@mixin icon-nodpi sidebar:attribution, /assets/sidebar-icons/filter;
+@mixin icon-nodpi sidebar:users, /assets/sidebar-icons/users;
+@mixin icon-nodpi sidebar:insights, /assets/sidebar-icons/insights;
+@mixin icon-nodpi sidebar:settings, /assets/sidebar-icons/settings;
+@mixin icon-nodpi sidebar:settings-selected, /assets/sidebar-icons/settings-selected;
+@mixin icon-nodpi sidebar:plan, /assets/sidebar-icons/plan;
+@mixin icon-nodpi sidebar:plan-selected, /assets/sidebar-icons/plan-selected;
+@mixin icon-nodpi sidebar:integrations, /assets/sidebar-icons/puzzle;
+
+
+.backface {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  display: none;
+  pointer-events: none;
+  z-index: 10;
+  will-change: transform;
+}
+
+@media (min-width: 561px) and (max-width: 1300px) {
+  .box {
+    width: 80px;
+    transition: width 300ms;
+  }
+
+  .menu-item-text {
+    opacity: 0;
+    transition: opacity 300ms;
+    display: none;
+  }
+
+  .box:hover {
+    width: 279px;
+  }
+
+  .box:hover .menu-item-text {
+    opacity: 1;
+    display: block;
+  }
+
+  .box:hover .menu-item-selected::after {
+    display: none;
+  }
+
+  .menu-item-selected::before{
+    display:none;
+  }
+
+  .menu-item-selected{
+    background-color: #4d91fc;
+  }
+}
+
+@media (max-width: 560px) {
+  .box {
+    transform: translate(-100%, 0);
+    transition: transform 300ms;
+    top: 0;
+    z-index: 12;
+  }
+
+  .box[data-open] {
+    transform: translate(0, 0);
+  }
+
+  .logo {
+    display: block;
+  }
+
+  .menu-item-selected::before{
+    display:none;
+  }
+
+  .menu-item-selected{
+    background-color: #4d91fc;
+  }
+
+  .menu-item-selected::after {
+    display: none;
+  }
+
+  .backface {
+    will-change: opacity;
+    display: block;
+    opacity: 0;
+    transition: opacity 300ms;
+    z-index: 12;
+  }
+
+  .backface[data-open] {
+    opacity: 0.5;
+    pointer-events: auto;
+  }
+}
+
+.row-arrow {
+  content: '';
+
+  position: absolute;
+  left: 208px;
+  top: 50%;
+  margin-top: -3px;
+
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 7px 0 7px;
+  border-color: white transparent transparent transparent;
+  transform: rotate(-90deg);
+}
+
+.row-arrow[data-collapsed] {
+  transform: none;
+}
+
+.sub-menu-item {
+  height: 54px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  color: #99a4c2;
+}
+
+.sub-menu-item:hover {
+  background-color: rgba(112, 126, 167, 0.12);
+  color: #ffffff;
+}
+
+.sub-menu-item-selected {
+  composes: sub-menu-item;
+
+  background-color: rgba(112, 126, 167, 0.12);
+  color: #ffffff;
+}
+
+.sub-menu-item-selected::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: inherit;
+  background: #4d91fc;
+  width: 4px;
+}

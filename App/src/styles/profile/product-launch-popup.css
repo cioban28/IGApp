@@ -1,0 +1,55 @@
+.box {
+  padding: 24px;
+}
+
+.title {
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: -0.010em;
+  color: #273142;
+  text-align: center;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #dddee5;
+}
+
+.choose {
+  margin: 26px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: pre-wrap;
+  text-transform: none;
+  text-align: left;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+}
+
+.text {
+  color: #354052;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.range-icon {
+  background: url(/assets/range-icon.png) center center no-repeat;
+  width: 11px;
+  height: 22px;
+  margin-left: 22px;
+}
+
+.next-icon {
+  background: url(/assets/next-icon.png) center center no-repeat;
+  width: 7px;
+  height: 11px;
+  margin-left: 12px;
+}
+
+.back-icon {
+  background: url(/assets/back-icon-accent.png) center center no-repeat;
+  width: 6px;
+  height: 12px;
+  margin-right: 12px;
+}

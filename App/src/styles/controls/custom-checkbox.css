@@ -1,0 +1,59 @@
+@import "../global/mixins.css";
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.size {
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    min-height: 16px;
+}
+
+.input {
+    composes: size;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.checkbox {
+    composes: size;
+    background-color: #3dbcf6;
+    border-radius: 2px;
+    position: relative;
+    margin-right: 12px;
+    opacity: 0.6;
+}
+
+.checkbox[data-checked] {
+    opacity: 1;
+}
+
+.check-mark {
+    composes: size;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 7px auto;
+}
+
+.children {
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    color: #b2bbd5;
+}
+
+.children[data-checked] {
+    color: #222a41;
+}
+
+@mixin icon-nodpi checkbox:checked, /assets/checked;

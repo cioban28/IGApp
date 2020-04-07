@@ -1,0 +1,129 @@
+.ReactTable {
+    border: none;
+}
+
+.ReactTable .rt-table {
+    overflow: visible;
+}
+
+.rt-thead, .rt-tbody {
+    background-color: #fff;
+}
+
+.ReactTable .rt-th,
+.ReactTable .rt-td {
+    align-items: center;
+    border: none;
+    color: #707ea7;
+    display: flex;
+    flex: 1 0 auto;
+    height: 65px;
+    justify-content: flex-start;
+    outline: none !important;
+    overflow: visible;
+    padding-left: 10px;
+    position: relative;
+}
+
+.ReactTable .rt-thead .rt-tr {
+    text-align: left;
+}
+
+.ReactTable .rt-tfoot .rt-td {
+    border-right-color: #4d91fc;
+    background-color: #4d91fc;
+    color: #fff;
+    padding-left: 10px;
+}
+
+.ReactTable .rt-tbody .rt-tr-group {
+    border-bottom: 0;
+}
+
+.ReactTable .rt-tbody .rt-td {
+  border-right: none;
+}
+
+.ReactTable .rt-thead.-header,
+.ReactTable .rt-tfoot {
+    box-shadow: unset;
+}
+
+.ReactTable .rt-thead .rt-th, .ReactTable .rt-thead .rt-td {
+  border-right: none;
+}
+
+.rthfc .rt-thead.-headerGroups,
+.rthfc .rt-thead.-header {
+    z-index: 3;
+}
+
+.rthfc .rt-thead.-filters {
+    z-index: 2;
+}
+
+.rthfc .-headerGroups .rt-th {
+    background-color: #f7f7f7;
+}
+
+.rthfc.-striped .rt-tr.-odd .rt-td {
+    background-color: #f7f7f7;
+}
+
+.rthfc.-highlight .rt-tr:hover .rt-td {
+    background-color: #f2f2f2;
+}
+
+
+/*------------ Sticky position version: -sp ------------*/
+
+.rthfc.-sp .rt-tbody {
+    overflow: visible;
+    flex: 1 0 auto;
+}
+
+.rthfc.-sp .rt-thead {
+   /*
+    * don't need to fix header now
+    position: sticky;
+    */
+}
+
+.rthfc.-sp .rt-thead.-headerGroups {
+    border-bottom-color: #f2f2f2;
+}
+
+.rthfc.-sp .rt-tfoot {
+    /*
+     * don't need to fix footer now
+     position: sticky;
+     z-index: 1;
+     bottom: 0;
+     */
+}
+
+.rthfc.-sp .rthfc-th-fixed,
+.rthfc.-sp .rthfc-td-fixed {
+    position: sticky;
+    z-index: 1;
+}
+
+.rthfc.-sp .rthfc-th-fixed-left,
+.rthfc.-sp .rthfc-td-fixed-left {
+    left: 0;
+}
+
+.rthfc.-sp .rthfc-th-fixed-right,
+.rthfc.-sp .rthfc-td-fixed-right {
+    left: 0;
+}
+
+/*------------ scroll event version: -se ------------*/
+
+.rthfc.-se .-header .rt-th.rthfc-th-fixed,
+.rthfc.-se .-headerGroups .rt-th.rthfc-th-fixed,
+.rthfc.-se .-filters .rt-th.rthfc-th-fixed,
+.rthfc.-se .rt-td.rthfc-td-fixed {
+    position: relative;
+    z-index: 1;
+}

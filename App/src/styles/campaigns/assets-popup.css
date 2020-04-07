@@ -1,0 +1,65 @@
+.table-header {
+    font-size: 14px;
+    font-weight: 600;
+    color: #4a90e2;
+}
+
+.table-cell {
+    font-size: 12px;
+    font-weight: 600;
+    color: #979797;
+}
+
+.table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table td, .table th {
+    border: solid 2px #979797;
+}
+
+.table tr:first-child th {
+    border-top: 0;
+}
+
+.table tr:last-child td {
+    border-bottom: 0;
+}
+
+.table tr td:first-child,
+.table tr th:first-child {
+    border-left: 0;
+}
+.table tr td:last-child,
+.table tr th:last-child {
+    border-right: 0;
+}
+
+.input {
+    border: none;
+    height: 26px;
+    padding: 0 6px;
+}
+
+.input:focus{
+    outline: none;
+}
+
+.add {
+    display: flex;
+    justify-content: center;
+    margin-top: 6px;
+    margin-bottom: 18px;
+}
+
+.add-button {
+    width: 72px;
+    height: 19px;
+}
+
+.add-button-cont {
+    font-size: 13px;
+    height: 19px;
+}

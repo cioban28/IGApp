@@ -1,0 +1,113 @@
+.head-plan {
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    white-space: nowrap;
+}
+
+.head-plan-button {
+    width: 100px
+}
+
+.head-plan-button + .head-plan-button {
+    margin-left: 15px;
+}
+
+.head-plan .head-plan-label {
+    margin: 0;
+    text-transform: capitalize;
+    font-size: 12px;
+    margin: 0 0 0 15px;
+}
+
+.campaigns-title {
+    height: 60px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.campaigns-title-date {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    -webkit-box-pack: start;
+    flex-grow: 0;
+    flex-shrink: 0;
+    color: #646973;
+    font-size: 24px;
+    line-height: 34px;
+}
+
+.campaigns-title-budget {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    -webkit-box-pack: end;
+    flex-grow: 1;
+    flex-shrink: 0;
+    color: #646973;
+    font-size: 20px;
+    line-height: 34px;
+    white-space: pre;
+}
+
+.campaigns-title-arrow {
+    font-size: 26px;
+    font-weight: 600;
+    padding-left: 41px;
+    background: url(/assets/plan_icons/arrow.svg) 12px 60% no-repeat;
+    background-size: 17px auto;
+}
+
+.wrap {
+    margin: 0 25px;
+    padding: 0 6px;
+    overflow-x: auto;
+    position: relative;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    padding: 2px 0;
+    height: 34px;
+    border-radius: .35rem;
+    border: 1px solid #A0A0A2;
+}
+
+.search-input {
+    font-size: 15px;
+    line-height: 2;
+    z-index: 1;
+    border-color: transparent !important;
+    user-select: none;
+    white-space: pre;
+    overflow: hidden;
+    text-rendering: optimizeSpeed;
+    padding-left: 26px;
+}
+
+.search-icon {
+    width: 18px;
+    height: 18px;
+    background: url(/assets/search.svg) center center no-repeat;
+    background-size: contain;
+    z-index: 2;
+    margin-right: -25px;
+    margin-left: 8px;
+}
+
+.search-clear {
+    width: 18px;
+    height: 18px;
+    background: url(/assets/delete-button.svg) center center no-repeat;
+    background-size: contain;
+    z-index: 2;
+    margin-left: -25px;
+    margin-right: 8px;
+    cursor: pointer;
+}

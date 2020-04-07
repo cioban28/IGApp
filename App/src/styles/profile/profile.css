@@ -1,0 +1,4 @@
+@import "../global/mixins.css";
+
+@mixin icon-nodpi profile:next-button, /assets/next;
+@mixin icon-nodpi profile:back-button, /assets/prev-icon;

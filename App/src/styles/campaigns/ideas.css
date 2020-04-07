@@ -1,0 +1,22 @@
+.like {
+    background: url(/assets/like-campaign.svg) center center no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.like[data-disabled] {
+    background: url(/assets/like-disabled.svg) center center no-repeat;
+    background-size: contain;
+    cursor: default;
+}
+
+.user-logo {
+    width: 44px;
+    height: 44px;
+    border-radius: 4px;
+    background: center center no-repeat;
+    background-size: auto 44px;
+    flex-shrink: 0;
+}

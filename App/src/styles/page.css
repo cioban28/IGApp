@@ -1,0 +1,150 @@
+.static {
+  position: relative;
+}
+
+.static[data-sidebar="false"] {
+  margin-left: 0 !important;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+  z-index: 12;
+  background: rgba(0, 0, 0, 0.55);
+  cursor: default;
+}
+
+.box {
+  max-width: 1051px;
+  min-height: 100%;
+}
+
+.popup .box {
+  margin: 0 auto;
+  width: 86%;
+  max-width: none;
+  padding: 180px 0 40px 0;
+  box-sizing: border-box;
+}
+
+.inner {
+  background: white;
+  border-radius: 4px;
+  position: relative;
+}
+
+.content {
+  padding: 40px;
+  background: #ffffff;
+}
+
+.static > .box > .inner > .content {
+  margin: 0;
+  padding: 0;
+  background: #f5f6fb;
+}
+
+.content-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.budget-content-head {
+  composes: content-head;
+  padding: 41px 0 20px 0;
+}
+
+.content-head-title {
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  font-size: 24px;
+  font-weight: 500;
+  color: #222a41;
+}
+
+.container {
+  display: inline-block;
+  width: 100%;
+  padding: 0 80px;
+  box-sizing: border-box;
+}
+
+.close-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 15px;
+  height: 15px;
+  background: url(/assets/x.svg) center center no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  z-index: 9999999;
+}
+
+@media(min-width: 1920px) {
+  .container {
+    padding: 0 128px;
+  }
+}
+
+@media (max-width: 1300px) {
+}
+
+@media (max-width: 700px) {
+  .popup .box {
+    width: auto;
+  }
+
+  .box {
+    padding: 20px 20px !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .static {
+    margin-left: 0;
+    margin-top: 69px;
+  }
+
+  .popup {
+    top: 69px;
+  }
+}
+
+@media (max-width: 429px) {
+  .content {
+    padding: 0 30px;
+    margin: 30px 0;
+  }
+
+  .box {
+    padding: 10px !important;
+  }
+}
+
+@media (max-width: 340px) {
+  .box {
+    padding: 10px 0 0 0 !important;
+  }
+}
+
+.loading2 {
+    position: fixed;
+    top: 35%;
+    left: 40%;
+}
+
+.popup2 {
+    width: 400px !important;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

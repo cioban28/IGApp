@@ -1,0 +1,28 @@
+.snippet-box {
+    background: #eef0f7;
+    border: rgba(0,0,0,0.2) 2px solid;
+    overflow: hidden;
+    border-radius: 5px;
+    text-align: left;
+    margin: 12px 0 8px;
+    width: 700px;
+}
+
+.snippet {
+    display: block;
+    overflow-x: auto;
+    padding: 0 12px;
+    color: rgb(0, 0, 0);
+}
+
+.copy-message {
+    color: #26B10F;
+    margin-left: 5px;
+    font-size: 14px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.code-wrap {
+    display: flex;
+}

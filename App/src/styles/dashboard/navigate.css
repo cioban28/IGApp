@@ -1,0 +1,414 @@
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.wrap {
+    width: calc(100% - 668px);
+    max-width: 700px;
+    position: relative;
+    margin: 90px 40px 0;
+}
+
+.metrics {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-text {
+    font-size: 12px;
+    font-weight: bold;
+    color: #99a4c2;
+    text-transform: uppercase;
+}
+
+.metrics-title {
+    margin-bottom: 25px;
+    composes: title-text;
+}
+
+.objectives {
+    margin: 60px 0;
+}
+
+.objectives-title {
+    composes: title-text;
+}
+
+.objectives-line {
+    display: flex;
+    justify-content: space-around;
+}
+
+.funnel {
+    height: 208px;
+    overflow-y: hidden;
+    overflow-x: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 9px;
+}
+
+.chartWrapper {
+    --width: 668px;
+    --height: calc(100vh - 80px);
+    --text-color: #707ea7;
+    position: relative;
+    width: var(--width);
+    height: var(--height);
+    margin-left: auto;
+}
+
+@media (max-width: 1200px) {
+    .chartWrapper {
+        --width: 400px;
+    }
+}
+
+.chartContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--width);
+    height: var(--height);
+    box-sizing: border-box;
+    padding: 12vh 10% 8vh calc(10% + 47px);
+    background-color: #1b2239;
+}
+
+.chart > svg {
+    overflow: visible;
+}
+
+.objectiveSelect {
+    position: absolute;
+    z-index: 2;
+    top: 5vh;
+    right: 15%;
+
+    display: flex;
+    align-items: center;
+}
+
+.arrow {
+    align-self: flex-end;
+    width: 14px;
+    height: 28px;
+    background: no-repeat center center;
+    background-size: contain;
+    cursor: pointer;
+    opacity: 0.5;
+
+    border: 0;
+    padding: 0;
+    outline: none;
+    box-shadow: none;
+}
+
+.prevObjective {
+    composes: arrow;
+    margin-right: 6px;
+    background-image: url(/assets/arrow_left.svg);
+}
+
+.nextObjective {
+    composes: arrow;
+    margin-left: 6px;
+    background-image: url(/assets/arrow_right.svg);
+}
+
+.objectiveName {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.objectiveTarget {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    text-align: center;
+    color: #4d91fc;
+}
+
+.panelContainer {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 100%;
+    transform: rotate(-90deg);
+    transform-origin: top right;
+
+    display: flex;
+    width: var(--height);
+    height: var(--width);
+}
+
+.past {
+    width: 40%;
+}
+
+.now {
+    position: relative;
+    width: 20%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+.future {
+    width: 40%;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 47px;
+    background-color: #161d2e;
+    color: var(--text-color);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    text-transform: uppercase;
+}
+
+.nowHeader {
+    composes: header;
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+    padding-top: 10px;
+    background-color: transparent;
+    color: white;
+}
+
+.centerBlock {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    border-radius: 0 0 6px 6px;
+    background-color: #f5f6fb;
+}
+
+.centerUnderlay {
+    position: absolute;
+    top: 0;
+    left: -6px;
+    width: calc(100% + 12px);
+    height: 5px;
+    background-color: #f5f6fb;
+}
+
+.centerCorner {
+    position: absolute;
+    top: 0;
+    width: 6px;
+    height: 6px;
+    background-color: #161d2e;
+}
+
+.centerDownCorner {
+    composes: centerCorner;
+    left: -6px;
+    border-top-right-radius: 100%;
+}
+
+.centerUpCorner {
+    composes: centerCorner;
+    right: -6px;
+    border-top-left-radius: 100%;
+}
+
+.centerLine {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    bottom: 0;
+    width: 1px;
+    background-color: #ee2032;
+    opacity: 0.5;
+}
+
+.centerPointer {
+    position: absolute;
+    bottom: calc(100% - 2px);
+    left: calc(50% - 4px);
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 8px solid #ee2032;
+}
+
+.editBlock {
+    position: relative;
+    z-index: 3;
+    transform: rotate(90deg);
+    margin-left: 8px;
+}
+
+.editButton {
+    width: 14px;
+    height: 14px;
+    background: no-repeat center center;
+    background-image: url(/assets/edit-blue.svg);
+    background-size: contain;
+    cursor: pointer;
+    opacity: 0.5;
+
+    border: 0;
+    padding: 0;
+    outline: none;
+    box-shadow: none;
+}
+
+.editPopup {
+    width: max-content;
+    top: 0;
+    left: 30px;
+}
+
+.channels {
+    --transform-origin-x: calc(0.2 * var(--height));
+    margin-top: 20px;
+    width: calc(var(--width) / 2);
+    display: flex;
+    align-items: center;
+    transform: rotate(90deg) translateX(var(--transform-origin-x));
+    transform-origin: var(--transform-origin-x) center;
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+.channels::-webkit-scrollbar {
+    display: none;
+}
+
+.now .channels {
+    --transform-origin-x: calc(0.1 * var(--height));
+}
+
+.channel {
+    --score: 1;
+    --size: calc(var(--score) * 28px);
+    flex-shrink: 0;
+    width: var(--size);
+    height: var(--size);
+    opacity: 0.3;
+    border-radius: 3px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: opacity 250ms ease;
+}
+
+.channel:hover {
+    opacity: 1;
+}
+
+.channel + .channel {
+    margin-left: 15px;
+}
+
+.tooltip {
+    padding: 0;
+    border-radius: 3px;
+    box-shadow: 0 8px 24px 0 #182033;
+}
+
+/* pulse animation */
+
+@keyframes pulse {
+    0% {
+        transform: scale(1, 0.75);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.1;
+    }
+    70% {
+        opacity: 0.09;
+    }
+    100% {
+        transform: scale(8, 6);
+        opacity: 0;
+    }
+}
+
+.pulse {
+    overflow: visible;
+}
+
+.circle {
+    transform: scale(1, 0.75);
+    transform-origin: center center;
+    animation: pulse 3s linear infinite;
+}
+
+.firstCircle {
+    composes: circle;
+}
+
+.secondCircle {
+    composes: circle;
+    animation-delay: 1s;
+}
+
+.thirdCircle {
+    composes: circle;
+    animation-delay: 2s;
+}
+
+/* just tooltip example */
+.channelTooltip {
+    width: 255px;
+    height: 200px;
+    margin: 10px;
+    background-color: #29314a;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.channelTooltipHeader {
+    width: 100%;
+    height: 40px;
+    background-color: rgba(112, 126, 167, 0.22);
+    padding: 0 10px;
+    color: var(--text-color, white);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    line-height: 40px;
+}
+
+.channelTooltipBody {
+    padding: 20px;
+}
+
+.channelTooltipRow {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.channelTooltipField {
+    width: 50%;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+    color: #99a4c2;
+}
+
+.channelTooltipValue {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    color: #4d91fc;
+}

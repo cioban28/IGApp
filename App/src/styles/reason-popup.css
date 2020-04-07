@@ -1,0 +1,98 @@
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    margin: 0;
+    padding: 0;
+}
+
+.inner {
+    margin: 50px 65px;
+    width: 100%;
+}
+
+.title {
+    font-size: 40px;
+    color: #24b10e;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.sub-title {
+    font-size: 20px;
+    color: #53626b;
+    margin-bottom: 9px;
+    white-space: pre-line;
+}
+
+.sub-title-bold {
+    font-size: 20px;
+    color: #53626b;
+    text-align: center;
+    margin-bottom: 9px;
+    font-weight: bold;
+}
+
+.boxes {
+    margin: 24px 0;
+    display: inline-flex;
+}
+
+.box {
+    width: 182px;
+    height: 181px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    border: solid 2px rgba(0, 0, 0, 0.4);
+    margin: 0 12px;
+    cursor: pointer;
+}
+
+.scratch {
+    composes: box;
+    background: url(/assets/reason-icons/scratch.svg) center 10% no-repeat;
+    background-size: 95px 85px;
+}
+
+.optimize {
+    composes: box;
+    background: url(/assets/reason-icons/optimize.svg) center 10% no-repeat;
+    background-size: 95px 85px;
+}
+
+.control {
+    composes: box;
+    background: url(/assets/reason-icons/control.svg) center 10% no-repeat;
+    background-size: 95px 85px;
+}
+
+.end-to-end {
+    composes: box;
+    background: url(/assets/reason-icons/end-to-end.svg) center 10% no-repeat;
+    background-size: 95px 85px;
+}
+
+.box-text {
+    font-size: 14px;
+    text-align: center;
+    color: #53626b;
+    margin: 110px 17px 0;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+}
+
+.other-box {
+    width: 262px;
+    height: 64px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: solid 2px rgba(0,0,0,0.4);
+    font-size: 20px;
+    margin-bottom: 9px;
+    text-align: center;
+}

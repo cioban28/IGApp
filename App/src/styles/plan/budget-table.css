@@ -1,0 +1,304 @@
+@import "../global/mixins.css";
+
+.box {
+    position: relative;
+    margin-left: 40px;
+}
+
+.table-scroller {
+    overflow-x: auto;
+    margin-left: 309px;
+    max-width: min-content;
+}
+
+.table {
+    padding-bottom: 13px;
+    border-spacing: 0;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.row-arrow {
+    border: solid #4d91fc;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 2px;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    position: absolute;
+    top: 8px;
+    left: 7px;
+}
+
+.row-arrow[data-headline] {
+    border: solid white;
+    border-width: 0 1px 1px 0;
+}
+
+.row-arrow-box {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.row-arrow-wrap {
+    height: 19px;
+    width: 19px;
+    border-radius: 25px;
+    background-color: #ffffff;
+    border: solid 1px #d9e7fa;
+    cursor: pointer;
+    position: relative;
+    margin-left: -11px;
+}
+
+.month-navigation {
+    height: 13px;
+    width: 7px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    display: table-cell;
+}
+
+.month-buttons {
+    height: inherit;
+    position: absolute;
+    z-index: 5;
+    background-color: white;
+    width: 30px;
+}
+
+.button-wrapper {
+    height: 100%;
+    display: table;
+    margin: auto;
+}
+
+.next-button {
+    composes: month-buttons;
+    right: 0;
+}
+
+.prev-button {
+    composes: month-buttons;
+    transform: rotate(180deg);
+    left: 279px;
+    margin-top: -0.5px;
+}
+
+.row-arrow-wrap[data-collapsed] {
+    transform: rotate(-180deg);
+}
+
+.row-icon {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    min-height: 32px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 12px;
+}
+
+.channel-action-icon {
+    width: 12px;
+    height: 12px;
+    min-width: 12px;
+    min-height: 12px;
+    composes: row-icon;
+    cursor: pointer;
+}
+
+.title {
+    display: table;
+    margin-left: 32px;
+    letter-spacing: 0.1px;
+}
+
+.title[data-category-row] {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 22px;
+}
+
+.row-arrow-wrap[data-headline] {
+    border: none;
+    background-color: #4d91fc;
+}
+
+.table-row {
+    height: 64px;
+    color: #707ea7;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: white;
+    width: fit-content;
+}
+
+.table-row[data-row-type='category'] {
+    background-color: rgba(222, 235, 255, 0.32);
+}
+
+.table-row[data-row-type='bottom'] {
+    background-color: #4d91fc;
+    color: #ffffff;
+}
+
+.row-title {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.row-title[data-category-row] {
+    margin-left: -12px;
+    border-style: solid;
+    border-color: rgba(106, 154, 230, 0.19);
+    border-width: 1px 0;
+}
+
+.title-text {
+    color: #222a41;
+    display: table-cell;
+    vertical-align: middle;
+    text-transform: capitalize;
+}
+
+.title-text[data-bottom-row] {
+    color: white;
+}
+
+.head-row {
+    composes: table-row;
+    height: 48px;
+    color: #99a4c2;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+.title-cell {
+    height: 64px;
+    width: 310px;
+    position: absolute;
+    display: table;
+    left: 0;
+    background-color: white;
+}
+
+.channel-edit-icons {
+    display: inline-flex;
+    margin-left: 6px;
+    vertical-align: middle;
+}
+
+.channel-edit-icons-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.cell {
+    letter-spacing: 0.1px;
+    padding-left: 11px;
+    box-sizing: border-box;
+}
+
+.head-row-cell {
+    composes: cell;
+}
+
+.head-row-cell[data-first-month] {
+    border-bottom: 2px solid #4d91fc;
+    color: #4d91fc;
+}
+
+.history-cell {
+    background-color: rgba(112, 126, 167, 0.13);
+}
+
+.quarter-cell {
+    background-color: #dae8ff;
+}
+
+.annual-cell {
+    color: #ffffff;
+    background-color: #4d91fc;
+}
+
+.annual-category-cell {
+    composes: annual-cell;
+    background-color: #7AADFC;
+}
+
+.value-cell {
+    composes: cell;
+    height: 14px;
+    position: relative;
+}
+
+.category-cell {
+    composes: cell;
+    border-style: solid;
+    border-color: rgba(106, 154, 230, 0.19);
+    border-width: 1px 0;
+}
+
+.title-cell {
+    margin-left: -1px;
+}
+
+.title-cell[data-row-type="category"] {
+    background-color: rgba(222, 235, 255, 0.32);
+    padding: 0;
+    margin-top: -1px;
+}
+
+.title-cell[data-row-type="regular"] {
+    background-color: white;
+}
+
+.title-cell[data-row-type="bottom"] {
+    background-color: #4d91fc;
+}
+
+.title-cell[data-row-type="header"] {
+    background-color: white;
+    height: 48px;
+    padding: 0;
+}
+
+.sticky-wrapper {
+    overflow-x: hidden;
+    vertical-align: middle;
+    overflow-y: hidden;
+    margin-left: 309px;
+    max-width: min-content;
+}
+
+.sticky-header {
+    z-index: 11;
+    display: inline-table;
+    opacity: 0;
+    transition: visibility 1ms ease-in-out, opacity 0.5s ease-in-out;
+    visibility: collapse;
+    width: 100%;
+    position: sticky;
+    top: 80px;
+    padding-bottom: 0;
+    composes: table;
+}
+
+.sticky-header[data-is-popup] {
+    top: 0;
+}
+
+.sticky-header[data-sticky] {
+    visibility: visible;
+    opacity: 1;
+}
+
+@mixin icon-nodpi plan:editChannel, /assets/plan_icons/edit-grey;
+@mixin icon-nodpi plan:removeChannel , /assets/plan_icons/delete;
+@mixin icon-nodpi plan:monthNavigation , /assets/plan_icons/shape;
+@mixin icon-nodpi plan:addChannel , /assets/plus-blue;

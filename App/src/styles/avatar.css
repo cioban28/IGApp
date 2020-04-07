@@ -1,0 +1,33 @@
+.picture {
+    width: 45px;
+    height: 45px;
+    background: none center center no-repeat;
+    background-size: contain;
+}
+
+.initials {
+    composes: picture;
+    display: inline-flex;
+    text-transform: uppercase;
+    font-size: 14px;
+    border: solid 1px #a7a7a7;
+    color: white;
+    justify-content: center;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.shadow{
+    width: 40px;
+    height: 40px;
+    opacity: 0.4;
+    -webkit-filter: blur(6.3px);
+    filter: blur(6.3px);
+    position: absolute;
+    left: 0px;
+    top: 6px;
+}
+
+.outer-div{
+    position:relative;
+}

@@ -1,0 +1,13 @@
+.loading {
+    position: fixed;
+    top: 35%;
+    left: 40%;
+}
+
+.popup {
+    width: 400px !important;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

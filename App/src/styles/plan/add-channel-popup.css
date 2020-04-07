@@ -1,0 +1,51 @@
+.channels {
+  max-width: 100%;
+  width: 600px;
+  list-style-type: none;
+  padding: 0;
+  border-radius: 3px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.channel {
+  background: #e4e7ee;
+  cursor: pointer;
+
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 10px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.expandedChannel {
+  background: #3aa1ee;
+  color: white;
+}
+
+.leafChannel {
+  background: #f8f8fa;
+  text-decoration: underline;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+  border-bottom: solid 1px #f2f2f2;
+  padding-bottom: 14px;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+}

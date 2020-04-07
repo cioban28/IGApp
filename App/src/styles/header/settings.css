@@ -1,0 +1,57 @@
+.frame {
+    background-color: #FFF;
+    width: 301px;
+    padding-bottom: 15px;
+}
+
+.frame::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    z-index: 1;
+    left: 94%;
+    top: 10px;
+    border: 8px solid #FFF;
+    border-color: transparent transparent #FFF #FFF;
+    transform-origin: 0 0;
+    transform: rotate(135deg);
+    box-shadow: -7px 8px 0px 0px rgba(255, 255, 255, 1);
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: -0.2px;
+    color: #707ea7;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4px;
+    padding-top: 5px;
+}
+
+.sub-menu {
+    padding: 5px 0;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-title {
+    color: #707ea7;
+    text-decoration: none;
+    padding: 7px 20px;
+    z-index: 10;
+}
+
+.sub-title:hover {
+    background: #f3f3f3;
+}

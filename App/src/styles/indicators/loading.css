@@ -1,0 +1,47 @@
+.frame {
+    background: white;
+    user-select: none;
+    border: 1px #f8f8f8;
+    border-radius: 5px;
+    -moz-box-sizing: border-box;
+    box-shadow: -2px 1px 12px 1px #e0e0e0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.top {
+    justify-content: center;
+    display: flex;
+    border-bottom: 1px solid #f2f2f2;
+    align-items: center;
+}
+
+.top-inner {
+    display: block;
+}
+
+.title {
+    font-weight: 600;
+    color: #bbc2c5;
+    font-size: 20px;
+}
+
+.icon {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 59px;
+}
+
+.bottom {
+    margin-top: 18px;
+    display: flex;
+    justify-content: center;
+}
+
+.gif {
+    background: url(/assets/giphy-downsized.gif) center center no-repeat;
+    background-size: contain;
+    width: 76px;
+    height: 76px;
+}

@@ -1,0 +1,6 @@
+@import "../global/mixins.css";
+
+@mixin icon-nodpi provider:hubspot, /assets/provider-icons/hubspot_favicon;
+@mixin icon-nodpi provider:salesforce, /assets/provider-icons/salesforce_favicon;
+@mixin icon-nodpi provider:sheets, /assets/provider-icons/sheets_favicon;
+@mixin icon-nodpi provider:stripe, /assets/provider-icons/stripe_favicon;

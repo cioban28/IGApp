@@ -1,0 +1,27 @@
+.column {
+    margin-left: 12px;
+    border-radius: 5px 5px 0 0;
+}
+
+.amount {
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    color: white;
+}
+
+.tower {
+    border-radius: 5px 5px 0 0;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #636872;
+    display: flex;
+    justify-content: center;
+    padding: 11px 0;
+    background-color: white;
+}

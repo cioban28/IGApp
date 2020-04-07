@@ -1,0 +1,105 @@
+@import "../global/mixins.css";
+
+.button {
+  width: 120px;
+  height: 120px;
+  border: 1px solid #ced0da;
+  border-radius: 4px;
+  margin: 10px 20px 10px 0;
+  cursor: pointer;
+  box-sizing: border-box;
+
+  background: linear-gradient(to bottom, #ffffff 0%, #f1f3f7 100%);
+  flex-direction: column;
+}
+
+.selected-button {
+  composes: button;
+
+  border: 2px solid #5893be;
+  background: linear-gradient(to bottom, #ffffff 0%, #dfe3e7 100%);
+}
+
+.icon {
+  margin: 10px auto;
+  width: 70px;
+  height: 70px;
+  background: none center center no-repeat;
+  background-size: contain;
+}
+
+.text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #354052;
+  text-align: center;
+  overflow: hidden;
+  height: 28px;
+  line-height: 28px;
+}
+
+@mixin icon-nodpi buttons:b2c, /assets/button-icons/B2C;
+@mixin icon-nodpi buttons:b2b, /assets/button-icons/B2B;
+@mixin icon-nodpi buttons:service, /assets/button-icons/ProService;
+@mixin icon-nodpi buttons:intro, /assets/button-icons/Intro;
+@mixin icon-nodpi buttons:growth, /assets/button-icons/Growth;
+@mixin icon-nodpi buttons:mature, /assets/button-icons/Mature;
+@mixin icon-nodpi buttons:decline, /assets/button-icons/Decline;
+@mixin icon-nodpi buttons:worldwide, /assets/button-icons/Worldwide;
+@mixin icon-nodpi buttons:national, /assets/button-icons/Nationwide;
+@mixin icon-nodpi buttons:local, /assets/button-icons/Local;
+@mixin icon-nodpi buttons:everywhere, /assets/button-icons/everywhere;
+@mixin icon buttons:purchase, /assets/button-icons/purchase-icon;
+@mixin icon-nodpi buttons:SaaS, /assets/button-icons/Saas;
+@mixin icon-nodpi buttons:freemium, /assets/button-icons/freemium;
+@mixin icon-nodpi buttons:marketplace, /assets/button-icons/marketplace;
+@mixin icon-nodpi buttons:martech, /assets/button-icons/martech;
+@mixin icon-nodpi buttons:bi, /assets/button-icons/BI;
+@mixin icon-nodpi buttons:finance-vertical, /assets/button-icons/Finance-vertical;
+@mixin icon-nodpi buttons:mobile, /assets/button-icons/mobile;
+@mixin icon-nodpi buttons:web, /assets/button-icons/web;
+@mixin icon-nodpi buttons:all-devices, /assets/button-icons/all-devices;
+@mixin icon-nodpi buttons:desktop, /assets/button-icons/desktop;
+@mixin icon-nodpi buttons:on-demand, /assets/button-icons/on-demand;
+@mixin icon-nodpi buttons:sales, /assets/button-icons/sales;
+@mixin icon-nodpi buttons:IT, /assets/button-icons/IT;
+@mixin icon-nodpi buttons:security, /assets/button-icons/security;
+@mixin icon-nodpi buttons:productivity, /assets/button-icons/productivity;
+@mixin icon-nodpi buttons:bizdev, /assets/button-icons/BizDev;
+@mixin icon-nodpi buttons:design, /assets/button-icons/design;
+@mixin icon-nodpi buttons:finance-role, /assets/button-icons/Finance;
+@mixin icon-nodpi buttons:general, /assets/button-icons/General;
+@mixin icon-nodpi buttons:hr, /assets/button-icons/HR;
+@mixin icon-nodpi buttons:marketing, /assets/button-icons/Marketing;
+@mixin icon-nodpi buttons:rd, /assets/button-icons/RD;
+@mixin icon-nodpi buttons:it-role, /assets/button-icons/IT_1;
+@mixin icon-nodpi buttons:other, /assets/button-icons/Other;
+@mixin icon-nodpi buttons:product, /assets/button-icons/Product;
+@mixin icon-nodpi buttons:sales-role, /assets/button-icons/sales-role;
+@mixin icon-nodpi buttons:security-role, /assets/button-icons/Security_1;
+@mixin icon-nodpi buttons:cxo, /assets/button-icons/CEO;
+@mixin icon-nodpi buttons:vp, /assets/button-icons/VP;
+@mixin icon-nodpi buttons:director, /assets/button-icons/Director;
+@mixin icon-nodpi buttons:manager, /assets/button-icons/Management;
+@mixin icon-nodpi buttons:employee, /assets/button-icons/Employee;
+@mixin icon-nodpi buttons:male, /assets/button-icons/male;
+@mixin icon-nodpi buttons:female, /assets/button-icons/female;
+@mixin icon-nodpi buttons:both, /assets/button-icons/both;
+
+@mixin icon-nodpi buttons:retailer, /assets/button-icons/retailer;
+@mixin icon-nodpi buttons:professional, /assets/button-icons/Pro-Service;
+@mixin icon-nodpi buttons:foodAndBeverage, /assets/button-icons/Food;
+@mixin icon-nodpi buttons:entertainment, /assets/button-icons/Entertainment;
+@mixin icon-nodpi buttons:ecommerce, /assets/button-icons/Ecommerce;
+@mixin icon-nodpi buttons:cpg, /assets/button-icons/CPG;
+@mixin icon-nodpi buttons:b2cSoftware, /assets/button-icons/b2cSoftware;
+@mixin icon-nodpi buttons:b2bSoftware, /assets/button-icons/b2bSoftware;
+@mixin icon-nodpi buttons:finance, /assets/button-icons/Finance_1;
+@mixin icon-nodpi buttons:healthcare, /assets/button-icons/Health;
+@mixin icon-nodpi buttons:companyServiceAll, /assets/button-icons/CompanyServiceAll;
+
+@mixin icon-nodpi buttons:light, /assets/button-icons/light;
+@mixin icon-nodpi buttons:caution, /assets/button-icons/caution;
+@mixin icon-nodpi buttons:moderate, /assets/button-icons/moderate;
+@mixin icon-nodpi buttons:aggressive, /assets/button-icons/aggressive;
+@mixin icon-nodpi buttons:optimistic, /assets/button-icons/optimistic;

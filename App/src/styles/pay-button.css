@@ -1,0 +1,25 @@
+.inner {
+    align-self: center;
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+    color: white;
+}
+
+.time-left-frame {
+    margin: 0 10px;
+    border-radius: 4px;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    background-color: #99a4c2;
+}
+
+.time-left-text {
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}

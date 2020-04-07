@@ -1,0 +1,9 @@
+.slider {
+    box-shadow: 0 2px 4px 0 #d5d8e6;
+    background-color: #0099cc;
+    border: solid 1px #d5d8e6;
+}
+
+.active-track {
+    background: rgba(0, 153, 204, 0.6);
+}

@@ -1,0 +1,93 @@
+.base-url {
+    display: inline-flex;
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.protocol-box {
+    height: 52px;
+    border-radius: 5px 0 0 5px;
+    background-color: #eeeeee;
+    width: 69px;
+    border-top: solid 2px #4a90e2;
+    border-left: solid 2px #4a90e2;
+    border-bottom: solid 2px #4a90e2;
+    cursor: pointer;
+}
+
+.protocol {
+    margin-top: 15px;
+    justify-content: center;
+    display: flex;
+}
+
+.user-box-url {
+    width: 100%;
+}
+
+.user-input-url {
+    height: 50px;
+    border-radius: 0 5px 5px 0;
+    border: solid 2px #4a90e2;
+    width: 100%;
+    padding-left: 9px;
+    font-size: 16px;
+}
+
+.row-center {
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: center;
+}
+
+.url-line {
+    margin-bottom: 32px;
+    display: inline-flex;
+}
+
+.url-title {
+    margin: 6px 0;
+    width: 221px;
+}
+
+.url-textbox {
+    padding: 0 32px 0 14px;
+}
+
+.urls {
+    white-space: normal;
+}
+
+.copy-to-clipboard {
+    background: url(/assets/copy-documents-option.svg) center center no-repeat;
+    background-size: contain;
+    height: 17px;
+    width: 25px;
+    margin-left: -28px;
+    cursor: pointer;
+    position: relative;
+    margin-top: 10px;
+}
+
+.copy-to-clipboard[data-checked] {
+    background: url(/assets/copy-documents-option-checked.svg) center center no-repeat;
+    background-size: contain;
+}
+
+.copy-message {
+    color: #26B10F;
+    margin-left: 7px;
+    margin-top: 8px;
+    font-size: 14px;
+    position: relative;
+    left: -50px;
+    top: 30px;
+}
+
+.advanced {
+    text-decoration: underline;
+    font-size: 14px;
+    font-weight: 600;
+    color: #127bec;
+    cursor: pointer;
+}

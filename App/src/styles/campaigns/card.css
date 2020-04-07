@@ -1,0 +1,176 @@
+.card-container {
+    width: 95%;
+    margin: 15px auto;
+    background: #fff;
+    min-height: 100px;
+    border-radius: 4px;
+    box-shadow: -1px 1px 15px 1px #e0e0e0;
+    color: #354052;
+    transition: 0.15s;
+    cursor: pointer;
+}
+
+.card {
+    width: calc(100% - 20px);
+    height: 80px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-container.expanded .card {
+    border-bottom: 2px solid #eee;
+}
+
+.card-container:hover {
+    background: #f7f7f7;
+}
+
+.card-name {
+    font-size: 14px;
+    font-weight: bold;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.card-footer, .campaign-footer {
+    display: flex;
+    align-items: center;
+}
+
+.card-budget, .campaign-budget {
+    color: #2ecc71;
+    font-size: 16px;
+}
+
+.budget {
+    white-space: pre;
+    color: #646973;
+    font-size: 13px;
+}
+
+.campaigns-count {
+    margin-left: auto;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.initials {
+    margin-left: auto;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.card-icon, .campaigns-count, .campaign-icon, .initials {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    background-size: contain;
+}
+
+.campaign {
+    width: 80%;
+    margin-left: 15%;
+    margin-bottom: 10px;
+    padding: 10px;
+
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 0 1px 1px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80px;
+
+    background-color: #fff;
+
+    position: relative;
+}
+
+.campaign::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    height: 2px;
+    width: 20px;
+    background-color: #a7a7a7;
+}
+
+.campaign::after {
+    content: '';
+    position: absolute;
+    bottom: 50%;
+    right: calc(100% + 18px);
+    height: calc(100% + 10px);
+    width: 2px;
+    background-color: #a7a7a7;
+}
+
+.firstCampaign::after {
+    height: calc(50% + 10px);
+}
+
+.campaign:first-child {
+    margin-top: 10px;
+}
+
+.campaign:hover {
+    background-color: #f0f0f0;
+}
+
+.campaign-name {
+    font-size: 14px;
+    font-weight: bold;
+    white-space: normal;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.campaign-budget {
+
+}
+
+.campaign-icon {
+    margin-left: auto;
+}
+
+.add-button {
+    width: 80%;
+    margin: 10px auto 10px 15%;
+    padding: 0;
+    text-align: center;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    box-shadow: none;
+    font-size: 14px;
+    cursor: pointer;
+    color: #555;
+}
+
+.no-campaigns .add-button {
+    width: 100%;
+    margin-left: auto;
+}
+
+.add-button:hover {
+    opacity: 0.8;
+}
+
+.dragging-preview {
+    box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+}
+
+.campaign.dragging-preview::before, .campaign.dragging-preview::after {
+    display: none;
+}

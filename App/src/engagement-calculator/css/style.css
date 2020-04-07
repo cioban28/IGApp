@@ -1,0 +1,232 @@
+* {
+  margin: 0px auto;
+  padding: 0px;
+  font-family: 'Open Sans', sans-serif;
+}
+.cont_principal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+/* Rectangle 3: */
+background-image: linear-gradient(-87deg, #F2F5F6 0%, #DDE5E8 100%);
+}
+
+.cont_centrar {
+  position: absolute;
+  top:8%;
+ 
+}
+
+.cont_centrar {
+  position: relative;
+  width: 98%;
+  float: left;
+  background-image: linear-gradient(-226deg, #FFFFFF 8%, #EEF3F5 100%);
+
+  border-radius: 8px;
+transition: all 0.5s;
+}
+
+.cent_active {
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.21);
+}
+
+
+.cont_tabs_login {
+position: relative;
+  float: left;
+  width: 100%;
+}
+
+.ul_tabs > li { 
+position: relative;
+  float: left;
+  width: 20%;
+  list-style: none;
+  text-align: center;
+
+}
+
+.ul_tabs > li > a  {  
+text-decoration: none;
+font-family: Helvetica;
+font-size: 16px;
+    color: #999;
+line-height: 14px;
+padding: 20px ;
+display: block;
+transition: all 0.5s;
+}
+
+  .ul_tabs > .active > a  {  
+color: #3cc96b;
+
+}
+
+.linea_bajo_nom {
+  position: relative;
+  width: 100%;
+  float: left;
+  background-color: #999;
+  height: 2px;
+}
+
+.active .linea_bajo_nom {
+  position: relative;
+  width: 100%;
+  float: left;
+background-color: #3cc96b;
+height: 2px;
+}
+
+.cont_text_inputs {
+position: relative;
+  float: left;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.input_form_sign {
+  position: relative;
+  float: left;
+  width: 90%;
+  border: none;
+ 
+  border-bottom: 1px solid #B0BEC5 ;
+  background-color: transparent;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.5s;
+    height: 0px;
+    margin: 0px;
+    padding: 0px;  
+opacity: 0;
+display: none;
+color:black;
+}
+
+.active_inp {
+  margin: 2% 5% ;  
+  padding: 10px 0px;
+  opacity: 1;
+height: 5px;
+}
+
+
+
+.input_form_sign:focus {
+  border-bottom: 1px solid #3cc96b ;}
+
+.link_forgot_pass {
+position: relative;
+  margin-top: 0px;
+  margin-left: 30%;
+  text-decoration: none;
+  color: #999;
+  font-size: 13px;
+  display: none;
+  float: left;
+  transition: all 0.5s;
+}
+.cont_btn {
+  position: relative;
+  float: left;
+}
+
+.btn_sign {
+  background: rgb(60,201,107);
+  box-shadow: 0px 2px 20px 2px rgb(60,201,107);
+  border-radius: 8px;
+  padding: 15px 30px;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  position: relative;  
+  float: left;
+  margin-left: 150px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  width:50%;
+}
+
+.terms_and_cons {
+  width: 70%;  
+  color: #999;
+  font-size: 13px;
+  transition: all 0.5s;
+}
+
+.d_none {
+  display: none;
+}
+
+.d_block {
+  display: block;
+}
+
+.cont_text_inputs > input:nth-child(1){
+  transition-delay: 0.2s;
+}
+
+.cont_text_inputs > input:nth-child(2){
+  transition-delay: 0.4s;
+}
+.cont_text_inputs > input:nth-child(3){
+  transition-delay: 0.6s;
+}
+.cont_text_inputs > input:nth-child(4){
+  transition-delay: 0.8s;
+}
+ 
+
+
+.form {
+  background: rgba(19, 35, 47, 0.9);
+  padding: 40px;
+  max-width: 600px;
+  margin: 40px auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+
+.tab-group {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+.tab-group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.tab-group li a {
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+  background: rgba(160, 179, 176, 0.25);
+  color: #a0b3b0;
+  font-size: 20px;
+  float: left;
+  width: 14.26%;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+.tab-group li a:hover {
+  background: #3CC96B;
+  color: #ffffff;
+}
+.tab-group .active a {
+  background: rgba(17,135,191,0.74);
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+.tab-content > div:last-child {
+  display: none;
+}
+.tab-content {
+  width:50%;
+}

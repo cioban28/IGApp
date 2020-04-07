@@ -1,0 +1,21 @@
+.box {
+  margin: 31px;
+  border: 1px solid #ced0da;
+  border-radius: 4px;
+  background: white;
+  padding: 16px;
+}
+
+.title {
+  color: #273142;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.030em;
+  margin-bottom: 8px;
+}
+
+.text {
+  font-size: 14px;
+  color: #646973;
+  line-height: 21px;
+}

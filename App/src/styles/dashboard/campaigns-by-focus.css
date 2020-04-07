@@ -1,0 +1,103 @@
+.inner {
+    padding: 30px 28px;
+}
+
+.row {
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.left {
+    width: 100px;
+}
+
+.planned {
+    font-size: 16px;
+    font-weight: 500;
+    color: #354052;
+    margin-top: 3px;
+}
+
+.number-of-campaigns {
+    font-size: 12px;
+    font-weight: 500;
+    color: #9b9b9b;
+    margin-top: 3px;
+}
+
+.campaigns-budget {
+    width: 155px;
+    font-size: 40px;
+    font-weight: 500;
+    color: #354052;
+}
+
+.right {
+    width: 180px;
+    margin-left: 20px;
+}
+
+.supporting {
+    display: inline-flex;
+    white-space: pre;
+}
+
+.supporting-number {
+    font-size: 16px;
+    color: #33cc33;
+}
+
+.supporting-text {
+    font-size: 14px;
+    font-weight: 500;
+    color: #9b9b9b;
+}
+
+.pipe {
+    width: 180px;
+    height: 16px;
+    border-radius: 10px;
+    background-color: #e2e7ee;
+    vertical-align: sub;
+    display: inline-block;
+}
+
+.pipe-fill {
+    width: 149px;
+    height: 16px;
+    border-radius: 10px;
+    background-color: #33cc33;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.focus {
+    margin: 70px 15px;
+}
+
+.focus-text {
+    composes: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: #9b9b9b;
+}
+
+.focus-budget {
+    composes: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #354052;
+    margin-top: 10px;
+}
+
+.focus-percentage {
+    composes: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: #9b9b9b;
+    margin-top: 5px;
+}

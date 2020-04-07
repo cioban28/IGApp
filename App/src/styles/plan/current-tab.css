@@ -1,0 +1,151 @@
+.wrap {
+  position: relative;
+  min-height: 500px;
+}
+
+.inner-box {
+  composes: inner-box from './plan.css';
+  padding: 0 10px;
+}
+
+.box {
+  composes: box from './box.css';
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 15px;
+  transition: filter 200ms;
+  box-sizing: border-box;
+}
+
+.boxes-container {
+  padding: 0;
+  margin: 0 auto;
+  /*display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;*/
+}
+
+.wrap[data-loading] .box {
+  filter: blur(8px);
+}
+
+.loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.6);
+  /*display: flex;*/
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 2;
+  padding-top: 100px;
+  /*display: none;*/
+  opacity: 0;
+  transition: opacity 200ms;
+  display: flex;
+}
+
+.wrap[data-loading] .loading {
+  /*display: flex;*/
+  opacity: 1;
+}
+
+.popup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 400px;
+  height: 200px;
+  position: static;
+  padding: 30px;
+}
+
+.popup-text {
+  margin-top: 40px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Popups */
+
+.popup-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 77px;
+}
+
+.popup-row:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  left: 15px;
+  right: 15px;
+  bottom: 0;
+  background: #e2e2e2;
+}
+
+.popup-row-icon {
+  width: 38px;
+  height: 38px;
+  margin-left: 15px;
+
+  background: none center center no-repeat;
+  background-size: contain;
+}
+
+.popup-row-text {
+  padding-left: 15px;
+  color: #646973;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.030em;
+  line-height: 16px;
+}
+
+.popup-row-right {
+  margin-left: auto;
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: flex;
+  padding-right: 15px;
+}
+
+.popup-row-status {
+  color: #2ecc71;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media (max-width: 430px) {
+  .boxes-container {
+    /*padding: 0 10px;*/
+  }
+
+  .box {
+    width: calc(100vw - 42px);
+  }
+}
+
+@media (max-width: 340px) {
+  .box {
+    width: calc(100vw - 20px);
+  }
+}
+
+@media (max-height: 660px) {
+  .loading {
+    padding-top: 20px;
+  }
+}
+
+@media (min-height: 1200px) {
+  .loading {
+    padding-top: 140px;
+  }
+}

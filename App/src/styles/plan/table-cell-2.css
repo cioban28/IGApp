@@ -1,0 +1,90 @@
+@import '../global/mixins.css';
+
+.root {
+    display: flex;
+    align-items: center;
+
+    &:hover,
+    &:active,
+    &:focus {
+        .actions > * {
+            opacity: 1;
+        }
+    }
+
+    button {
+        overflow: hidden;
+    }
+}
+.input-wrapper {
+}
+.input {
+    font-size: inherit;
+    letter-spacing: 0.1px;
+    line-height: 34px;
+    max-width: 75px;
+    vertical-align: middle;
+    font-weight: inherit;
+    border: solid 1px rgba(0, 0, 0, 0);
+
+    &--editable {
+        border-color: #e6e8f0;
+        border-radius: 3px;
+        box-shadow: 0 0 3px 0 #e6e8f0;
+        color: #4d91fc;
+        padding-left: 10px;
+        margin-left: -10px;
+    }
+}
+
+.secondary-value {
+    bottom: -2px;
+    color: #b2bbd5;
+    font-size: 10px;
+    font-weight: 500;
+    opacity: 0;
+    position: absolute;
+    transition: opacity 0.15s;
+    left: 10px;
+
+    &--show {
+        opacity: 1;
+    }
+}
+
+.button {
+    @mixin nulled-button;
+    font-size: 0;
+
+    &--edit {
+        opacity: 0;
+    }
+}
+.icon {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+}
+
+.actions {
+    font-size: 0;
+    margin-left: 3px;
+    display: flex;
+    align-items: center;
+
+    button + button {
+        margin-left: 3px;
+    }
+}
+
+@mixin icon-nodpi plan:none, /assets/plan_icons/clear-state;
+@mixin icon-nodpi plan:like, /assets/plan_icons/like;
+@mixin icon-nodpi plan:lock, /assets/plan_icons/lockChannel;
+@mixin icon-nodpi plan:edit, /assets/plan_icons/edit-per-cell;
+
+@mixin icon-nodpi plan:acceptSuggestion, /assets/plan_icons/redo;
+@mixin icon-nodpi plan:approveEdit, /assets/plan_icons/accept;
+@mixin icon-nodpi plan:declineEdit, /assets/plan_icons/decline;

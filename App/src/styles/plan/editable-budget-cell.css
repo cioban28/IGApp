@@ -1,0 +1,58 @@
+.container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.toggle-button {
+    width: 20px;
+    height: 20px;
+    margin: 0 0 0 6px;
+    background: url(/assets/plan_icons/edit-grey.svg) transparent center no-repeat;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.container:hover .toggle-button {
+    opacity: 1;
+}
+
+.container:hover .toggle-button[disabled] {
+    opacity: 0;
+}
+
+.input {
+    min-width: 80px;
+    height: 32px;
+    padding: 0 10px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    border: 1px solid rgba(178, 187, 213, 0.5);
+    font-size: 14px;
+}
+
+.save-button {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    margin: 0 0 0 4px;
+    background: url(/assets/plan_icons/accept.svg) transparent center no-repeat;
+}
+
+.cancel-button {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    margin: 0 0 0 2px;
+    background: url(/assets/plan_icons/decline.svg) transparent center no-repeat;
+}

@@ -1,0 +1,75 @@
+@import "../global/mixins.css";
+
+.frame {
+    background-color: #fafafa;
+    border: solid 3px #e6e6e6;
+    width: 400px;
+    padding-bottom: 20px;
+}
+
+.frame::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -14px;
+    left: 366px;
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 14px 10px;
+    border-color: transparent transparent #e6e6e6 transparent;
+}
+
+.title {
+    background-color: #e6e6e6;
+    font-size: 16px;
+    font-weight: 600;
+    color: #354052;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4px;
+    padding-top: 1px;
+}
+
+.inner {
+    padding: 20px;
+    display: -webkit-box;
+    border-bottom: solid 2px #f2f2f2;
+    padding-bottom: 15px;
+}
+
+.inner[data-unread] {
+    background-color: #EFF3F6;
+}
+
+.picture {
+    width: 45px;
+    height: 45px;
+    background: none center center no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+}
+
+.initials {
+    composes: picture;
+    display: inline-flex;
+    text-transform: uppercase;
+    font-size: 14px;
+    border: solid 1px #a7a7a7;
+    color: white;
+    justify-content: center;
+    box-sizing: border-box;
+    line-height: 43px;
+}
+
+.text-wrap {
+    margin: 0 45px 0 15px;
+}
+
+.time {
+    font-size: 12px;
+    color: rgba(53, 64, 82, 0.5);
+    display: block;
+    margin-top: 2px;
+}

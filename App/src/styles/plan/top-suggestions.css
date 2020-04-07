@@ -1,0 +1,117 @@
+.title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #646973;
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.title::after {
+    content: '';
+    position: relative;
+    border-style: solid;
+    border-width: 6px 4px 0 4px;
+    border-color: #646973 transparent transparent transparent;
+    top: 10px;
+    left: 4px;
+    transform: rotate(-90deg);
+    width: 0;
+    height: 0;
+}
+
+.title[data-active]::after {
+    transform: none;
+}
+
+.inner {
+    padding: 22px 20px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    border: solid 2px #dfe2e5;
+    width: 1120px;
+    display: inline-flex;
+    justify-content: flex-start;
+    height: 174px;
+}
+
+.inner-pos {
+    display: flex;
+    justify-content: center;
+}
+
+.no-suggestions-pos {
+    composes: inner-pos;
+    align-items: center;
+    width: 100%;
+}
+
+.no-suggestions-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #646973;
+}
+
+.top-right {
+    position: absolute;
+    top: -35px;
+    left: calc(100% + 11px);
+}
+
+.close {
+    height: 20px;
+    width: 20px;
+    background: url(/assets/error.svg) center center no-repeat;
+    cursor: pointer;
+    min-width: 20px;
+    min-height: 20px;
+}
+
+.forecast-headline {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0 22px;
+    text-align: center;
+}
+
+.table {
+    table-layout: auto;
+    width: 100%;
+}
+
+.head-row {
+    height: 30px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.table-row {
+    height: 25px;
+    font-size: 16px;
+}
+
+.history-grow {
+    font-size: 16px;
+    font-weight: 500;
+    color: #24b10e;
+    align-self: center;
+}
+
+.history-grow[data-decline] {
+    color: red;
+}
+
+.history-arrow {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 8px 11px 8px;
+    border-color: transparent transparent #24b10e transparent;
+    align-self: center;
+}
+
+.history-arrow[data-decline] {
+    transform: rotate(180deg);
+    border-color: transparent transparent red transparent;
+}

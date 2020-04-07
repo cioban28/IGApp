@@ -1,0 +1,66 @@
+.content {
+    padding: 0;
+    margin: 0;
+}
+
+.title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #354052;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 16px;
+    font-weight: 500;
+    color: #354052;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.chatbot {
+    border-radius: 4px;
+    border: solid 2px #dfe2e5;
+}
+
+.constraint-step {
+    display: flex;
+    align-items: center;
+}
+
+.constraint-text {
+    color: #007aff;
+}
+
+.options-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.chat-button-cont {
+    height: 100% !important;
+    width: 100% !important;
+    font-size: inherit !important;
+    font-weight: inherit !important;
+    padding: 0 !important;
+    white-space: normal !important;
+}
+
+.option[data-chosen] {
+    color: #ffffff;
+    border: none;
+    background-color: #4d91fc;
+    cursor: default;
+}
+
+.input-field {
+    margin: 0 7px;
+}
+
+.number-input {
+    width: 39px;
+    padding: 5px;
+}

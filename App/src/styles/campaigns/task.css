@@ -1,0 +1,107 @@
+.task-item {
+    margin-bottom: 20px;
+}
+
+.task {
+    display: inline-flex;
+    width: 100%;
+    color: #646973;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.task[data-state=true] {
+    color: #D0D2D5;
+}
+
+.start {
+    display: inline-flex;
+    justify-content: flex-start;
+    width: 92%;
+}
+
+.circle {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background: url(assets/circle.svg) center center no-repeat;
+    cursor: pointer;
+    min-width: 40px;
+    min-height: 40px;
+}
+
+.task[data-state=true] .circle {
+    background: url(assets/check-circle.svg) center center no-repeat;
+}
+
+.task-name {
+    margin-left: 20px;
+    margin-top:9px;
+}
+
+.content {
+    height: 20px;
+    width: 30px;
+    background: url(assets/content.svg) center center no-repeat;
+    margin-left: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    min-width: 30px;
+    min-height: 20px;
+}
+
+.budget {
+    color: #16B200;
+    margin-left: 20px;
+    margin-top: 8px;
+}
+
+.due-date {
+    margin-left: 20px;
+    margin-top: 8px;
+}
+
+.owner {
+    margin-left: 20px;
+    margin-top: 8px;
+    text-decoration: underline;
+}
+
+.delete {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.description {
+    margin-left: 60px;
+    margin-bottom: 25px;
+}
+
+.edit-icon {
+    background: url(/assets/edit_task.svg) center center no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+}
+
+.delete-icon {
+    background: url(/assets/delete-task.svg) center center no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+}
+
+.priority {
+    background: url(/assets/star.svg) center center no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 15px;
+    margin-top: -4px;
+}

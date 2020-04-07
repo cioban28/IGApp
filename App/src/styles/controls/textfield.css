@@ -1,0 +1,38 @@
+.box {
+    height: 36px;
+    align-items: center;
+}
+
+.box[data-with-error] {
+    width: 100%;
+    display: inline-flex;
+}
+
+.input {
+    border: none;
+    box-shadow: 0 0 0 1px #ced0da;
+    background: white;
+    padding: 0 14px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #354052;
+    border-radius: 4px;
+    height: 36px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.input:disabled {
+    background: #ededed;
+}
+
+.validation-error-wrapper {
+    margin-left: 15px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.validation-error-wrapper[data-disabled] {
+    visibility: hidden;
+}

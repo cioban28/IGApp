@@ -1,0 +1,79 @@
+@import "../global/mixins.css";
+
+.title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #354052;
+    text-align: center;
+}
+
+.platform-line {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.platform-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #354052;
+    margin: 20px 20px 0;
+}
+
+@mixin icon-nodpi platform:salesforce, /assets/platform-icons/salesforce;
+@mixin icon platform:hubspot, /assets/platform-icons/hubspot;
+@mixin icon-nodpi platform:pipedrive, /assets/platform-icons/pipedrive;
+@mixin icon-nodpi platform:dynamics, /assets/platform-icons/dynamics;
+@mixin icon platform:salesflare, /assets/platform-icons/salesflarePNG;
+@mixin icon-nodpi platform:zoho, /assets/platform-icons/zoho-crm-icn;
+@mixin icon platform:closeio, /assets/platform-icons/close-io-logo-dark;
+
+@mixin icon-nodpi platform:stripe, /assets/platform-icons/stripe_logo;
+@mixin icon-nodpi platform:paypal, /assets/platform-icons/PayPal;
+@mixin icon-nodpi platform:braintree, /assets/platform-icons/Braintree_logo;
+@mixin icon-nodpi platform:square, /assets/platform-icons/square_logo;
+
+@mixin icon-nodpi platform:googleAnalytics, /assets/platform-icons/google_analytics-official;
+@mixin icon-nodpi platform:kissmetrics, /assets/platform-icons/kissmetrics;
+@mixin icon-nodpi platform:mixpanel, /assets/platform-icons/mixpanel;
+@mixin icon-nodpi platform:heap, /assets/platform-icons/heap-logo;
+
+@mixin icon-nodpi platform:facebook, /assets/platform-icons/FB;
+@mixin icon platform:linkedin, /assets/platform-icons/linkedin;
+@mixin icon-nodpi platform:twitter, /assets/platform-icons/twitter;
+@mixin icon-nodpi platform:instagram, /assets/platform-icons/instagram;
+@mixin icon-nodpi platform:googlePlus, /assets/platform-icons/google-plus-3;
+@mixin icon-nodpi platform:youtube, /assets/platform-icons/youtube-2;
+@mixin icon-nodpi platform:snapchat, /assets/platform-icons/snapchat;
+@mixin icon-nodpi platform:pinterest, /assets/platform-icons/pinterest-1;
+@mixin icon platform:reddit, /assets/platform-icons/Reddit_logo;
+@mixin icon platform:quora, /assets/platform-icons/Quora_logo_2015.svg;
+
+@mixin icon-nodpi platform:trello, /assets/platform-icons/trello-logo-blue;
+@mixin icon platform:asana, /assets/platform-icons/Asana-Horizontal-Color;
+@mixin icon-nodpi platform:basecamp, /assets/platform-icons/basecamp-logo;
+@mixin icon platform:googleSheets, /assets/platform-icons/google-sheets-logo;
+@mixin icon-nodpi platform:slack, /assets/platform-icons/Slack_RGB;
+@mixin icon platform:workfront, /assets/platform-icons/workfrontlogo;
+@mixin icon platform:wrike, /assets/platform-icons/wrike_logo_grey_digital_large;
+@mixin icon platform:monday, /assets/platform-icons/monday_logo;
+
+@mixin icon-nodpi platform:moz, /assets/platform-icons/moz-logo-blue;
+@mixin icon-nodpi platform:serpstat, /assets/platform-icons/serpstat_logo;
+@mixin icon platform:SERanking, /assets/platform-icons/SE_ranking_logo;
+@mixin icon platform:SEMrush, /assets/platform-icons/SEMrush-Logo;
+
+@mixin icon platform:sageintacct, /assets/platform-icons/sageintacct;
+@mixin icon platform:netsuite, /assets/platform-icons/netsuite-logo;
+@mixin icon platform:oracleERP, /assets/platform-icons/Oracle_logo.svg;
+@mixin icon platform:sap, /assets/platform-icons/SAP_2011_logo.svg;
+
+@mixin icon-nodpi platform:intercom, /assets/platform-icons/intercom-logo;
+@mixin icon-nodpi platform:zandesk, /assets/platform-icons/zendesk-wordmark;
+@mixin icon-nodpi platform:drift, /assets/platform-icons/Drift_logo_black;
+
+@mixin icon-nodpi platform:facebookAds, /assets/platform-icons/facebook-campaigns;
+@mixin icon-nodpi platform:googleAds, /assets/platform-icons/google-campaigns;
+@mixin icon-nodpi platform:twitterAds, /assets/platform-icons/twitter-campaigns;
+@mixin icon-nodpi platform:linkedInAds, /assets/linkedin-ads, png;
+@mixin icon-nodpi platform:bingAds, /assets/platform-icons/bing, png;
+@mixin icon-nodpi platform:quoraAds, /assets/quora-ads, png;

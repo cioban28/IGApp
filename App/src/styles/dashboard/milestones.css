@@ -1,0 +1,11 @@
+svg .clock-face {
+    fill: none;
+}
+svg .milestone-g:hover text {
+    display: block;
+}
+.milestone-g circle {
+    stroke: #5E5F66;
+    cursor: pointer;
+    fill: none;
+}

@@ -1,0 +1,52 @@
+.box {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-left: 8px;
+  height: 28px;
+  width: 50px;
+  background: url(/assets/calendar.svg) center center no-repeat;
+  background-size: 24px auto;
+  cursor: pointer;
+}
+
+.input {
+  flex-grow: 1;
+}
+
+.rangeCalendar :global(.rc-calendar-footer-btn) {
+  margin: 0;
+  padding: 0!important;
+  height: 72px;
+}
+
+.rangeCalendarFooter {
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  margin-top: auto;
+  padding: 16px 24px;
+}
+
+.rangeCalendarButton {
+  width: 100px;
+  height: 40px;
+  padding: 0;
+}
+
+.rangeCalendarButtonInner {
+  height: 40px;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 0 16px;
+}
+
+.rangeCalendarButtonSecondary {
+  composes: rangeCalendarButton;
+  border: 1px solid #dbdde7;
+}

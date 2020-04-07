@@ -1,0 +1,85 @@
+.inner-page {
+  background: #f5f6fb !important;
+}
+
+.static-no-side-bar {
+  margin-left: 0 !important;
+}
+
+.logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 4px;
+  background: #e6eaee url(/assets/gdrive_logo.svg) center center no-repeat;
+  background-size: auto 28px;
+  flex-shrink: 0;
+}
+
+.logo-wrap {
+  margin-left: 40px;
+}
+
+.logo-cell {
+  display: flex;
+  align-items: center;
+}
+
+.select {
+  width: 248px;
+}
+
+@media (max-width: 450px) {
+  .logo-cell {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo-wrap {
+    margin-left: 0;
+    margin-top: 32px;
+  }
+
+  .select {
+    width: 100%;
+  }
+}
+
+.inner-box {
+  /*margin: 31px 0;*/
+  padding-right: 35px;
+  /*min-height: 300px;*/
+}
+
+.table-bottom {
+    display: flex;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.invite-message {
+  justify-content: center;
+  display: flex;
+  margin-top: 6px;
+}
+
+.remove-button {
+  padding: 2px;
+  height: 28px;
+  width: 28px;
+  cursor: pointer;
+  background: url(/assets/trash.svg) center center no-repeat;
+  background-size: 24px auto;
+  flex-grow: 0;
+  flex-shrink: 0
+}
+
+.user-picture {
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+  background: center center no-repeat;
+  background-size: auto 60px;
+}

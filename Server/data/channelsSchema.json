@@ -1,0 +1,1783 @@
+{
+  "schemaName": "channels",
+  "type": "object",
+  "title": "Channels",
+  "_id": "58808f9e734d1d5b7d47b063",
+  "properties": {
+    "web_landingPages": {
+      "maxMatchValue": 5000,
+      "source": "landing page",
+      "medium": "content",
+      "nickname": "Landing page",
+      "type": "integer",
+      "isBlockedBySystem": false,
+      "alternatives": [
+        "telemarketing",
+        "advertising_searchMarketing_SEM_googleAdwords",
+        "email"
+      ],
+      "category": "website",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 200,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 1,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "web_companyWebsite": {
+      "maxMatchValue": 5000,
+      "source": "website",
+      "medium": "content",
+      "nickname": "Company’s Website",
+      "type": "integer",
+      "alternatives": [
+        "content_contentCreation_eBook",
+        "content_contentCreation_imagesAndInfographics",
+        "content_contentCreation_presentations"
+      ],
+      "isBlockedBySystem": false,
+      "category": "website",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 200,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 1,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "viral_recommendAFriend_referralProgram": {
+      "maxMatchValue": 5000,
+      "source": "viral",
+      "medium": "referral",
+      "nickname": "Referral Program",
+      "type": "integer",
+      "isBlockedBySystem": false,
+      "alternatives": [
+        "engineeringAsMarketing",
+        "partners_affiliatePrograms",
+        "advertising_paidReviews"
+      ],
+      "category": "social",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 750,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 3,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "telemarketing": {
+      "maxMatchValue": 5000,
+      "source": "telemarketing",
+      "medium": "offline",
+      "nickname": "Outbound calling",
+      "type": "integer",
+      "isBlockedBySystem": false,
+      "alternatives": [
+        "web_landingPages",
+        "email",
+        "viral_recommendAFriend_referralProgram"
+      ],
+      "category": "outbound calling",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 600,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 2,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "social_quora": {
+      "maxMatchValue": 5000,
+      "source": "quora",
+      "medium": "social",
+      "nickname": "Quora - organic",
+      "type": "integer",
+      "isBlockedBySystem": false,
+      "alternatives": [
+        "social_reddit",
+        "content_contentPromotion_forums_other",
+        "content_contentPromotion_contentDiscovery_outbrain"
+      ],
+      "category": "social",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 200,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 2,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "social_reddit": {
+      "maxMatchValue": 5000,
+      "source": "reddit",
+      "medium": "social",
+      "nickname": "Reddit - organic",
+      "type": "integer",
+      "isBlockedBySystem": false,
+      "alternatives": [
+        "social_quora",
+        "content_contentPromotion_forums_other",
+        "content_contentPromotion_contentDiscovery_outbrain"
+      ],
+      "category": "social",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 200,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 2,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "social_productHunt": {
+      "maxMatchValue": 5000,
+      "source": "product hunt",
+      "medium": "social",
+      "nickname": "Product Hunt",
+      "type": "integer",
+      "isBlockedBySystem": true,
+      "alternatives": [
+        "content_contentPromotion_forums_other",
+        "social_reddit",
+        "engineeringAsMarketing"
+      ],
+      "category": "social",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 5500,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 1,
+        "max": -1
+      },
+      "importance": 0
+    },
+    "social_communityBuilding": {
+      "maxMatchValue": 5000,
+      "source": "community",
+      "medium": "social",
+      "nickname": "Community Building",
+      "type": "integer",
+      "isBlockedBySystem": false,
+      "alternatives": [
+        "social_linkedinCompanyProfile",
+        "social_influencerOutreach",
+        "social_twitterAccount"
+      ],
+      "category": "social",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 300,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 3,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "social_influencerOutreach": {
+      "maxMatchValue": 5000,
+      "source": "influencer",
+      "medium": "social",
+      "nickname": "Influencers Outreach",
+      "type": "integer",
+      "isBlockedBySystem": false,
+      "alternatives": [
+        "social_communityBuilding",
+        "social_linkedinCompanyProfile",
+        "social_twitterAccount"
+      ],
+      "category": "social",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 450,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 2,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "social_linkedinCompanyProfile": {
+      "maxMatchValue": 5000,
+      "source": "linkedin",
+      "medium": "social",
+      "nickname": "LinkedIn - organic",
+      "type": "integer",
+      "isBlockedBySystem": false,
+      "alternatives": [
+        "social_twitterAccount",
+        "social_facebookPage",
+        "social_twitterAccount"
+      ],
+      "category": "social",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 250,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 2,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "social_pinterestPage": {
+      "maxMatchValue": 5000,
+      "source": "pinterest",
+      "medium": "social",
+      "nickname": "Pinterest - organic",
+      "type": "integer",
+      "alternatives": [
+        "social_googlePlusPage",
+        "social_youtubeChannel",
+        "social_instagramAccount"
+      ],
+      "category": "social",
+      "isBlockedBySystem": true,
+      "monthBudgetLimits": {
+        "range": {
+          "min": 1000,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 2,
+        "max": -1
+      },
+      "importance": 0
+    },
+    "social_googlePlusPage": {
+      "maxMatchValue": 5000,
+      "source": "google plus",
+      "medium": "social",
+      "nickname": "Google+ - organic",
+      "type": "integer",
+      "isBlockedBySystem": false,
+      "alternatives": [
+        "social_instagramAccount",
+        "social_youtubeChannel",
+        "social_pinterestPage"
+      ],
+      "category": "social",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 500,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 2,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "social_instagramAccount": {
+      "maxMatchValue": 5000,
+      "source": "instagram",
+      "medium": "social",
+      "nickname": "Instagram - organic",
+      "type": "integer",
+      "alternatives": [
+        "social_googlePlusPage",
+        "social_twitterAccount",
+        "social_pinterestPage"
+      ],
+      "isBlockedBySystem": false,
+      "category": "social",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 900,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 2,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "social_youtubeChannel": {
+      "maxMatchValue": 5000,
+      "source": "youtube",
+      "medium": "social",
+      "nickname": "Youtube - organic",
+      "type": "integer",
+      "alternatives": [
+        "social_instagramAccount",
+        "social_googlePlusPage",
+        "social_pinterestPage"
+      ],
+      "isBlockedBySystem": false,
+      "category": "social",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 400,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 2,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "social_twitterAccount": {
+      "maxMatchValue": 5000,
+      "source": "twitter",
+      "medium": "social",
+      "nickname": "Twitter - organic",
+      "type": "integer",
+      "alternatives": [
+        "social_instagramAccount",
+        "social_linkedinCompanyProfile",
+        "social_youtubeChannel"
+      ],
+      "isBlockedBySystem": false,
+      "category": "social",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 250,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 2,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "social_facebookPage": {
+      "maxMatchValue": 5000,
+      "source": "facebook",
+      "medium": "social",
+      "nickname": "Facebook - organic",
+      "type": "integer",
+      "alternatives": [
+        "social_communityBuilding",
+        "social_linkedinCompanyProfile",
+        "social_twitterAccount"
+      ],
+      "isBlockedBySystem": false,
+      "category": "social",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 250,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 2,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "PR_publicity_pressReleases": {
+      "maxMatchValue": 5000,
+      "source": "(publish network)",
+      "medium": "press outreach",
+      "nickname": "Press Outreach",
+      "type": "integer",
+      "alternatives": [
+        "content_contentPromotion_targetingBlogs",
+        "events_offlineEvents_running",
+        "events_offlineEvents_sponsorship"
+      ],
+      "isBlockedBySystem": false,
+      "category": "PR",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 3000,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 3,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "PR_unconventionalPR_customerAppreciation": {
+      "maxMatchValue": 5000,
+      "source": "customer appreciation",
+      "medium": "offline",
+      "nickname": "Customer Appreciation",
+      "type": "integer",
+      "alternatives": [
+        "PR_unconventionalPR_publicityStunts",
+        "events_offlineEvents_showcase",
+        "events_onlineEvents_workshop"
+      ],
+      "isBlockedBySystem": false,
+      "category": "PR",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 500,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 2,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "PR_unconventionalPR_publicityStunts": {
+      "maxMatchValue": 5000,
+      "source": "publicity stunt",
+      "medium": "offline",
+      "nickname": "Publicity Stunt",
+      "type": "integer",
+      "alternatives": [
+        "events_onlineEvents_webinar",
+        "events_onlineEvents_workshop",
+        "social_influencerOutreach"
+      ],
+      "isBlockedBySystem": false,
+      "category": "PR",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 15000,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 2,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "partners_affiliatePrograms": {
+      "maxMatchValue": 5000,
+      "source": "(affiliate id)",
+      "medium": "affiliate",
+      "nickname": "Affiliate Program",
+      "type": "integer",
+      "alternatives": [
+        "viral_recommendAFriend_referralProgram",
+        "email",
+        "telemarketing"
+      ],
+      "isBlockedBySystem": false,
+      "category": "partners",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 450,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 3,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "mobile_mobileSite": {
+      "maxMatchValue": 5000,
+      "source": "mobile site",
+      "medium": "content",
+      "nickname": "Mobile Site",
+      "type": "integer",
+      "isBlockedBySystem": true,
+      "alternatives": [
+        "mobile_mobileApp",
+        "web_landingPages",
+        "web_companyWebsite"
+      ],
+      "category": "website",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 1200,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 2,
+        "max": -1
+      },
+      "importance": 0
+    },
+    "mobile_mobileApp": {
+      "maxMatchValue": 5000,
+      "source": "app",
+      "medium": "mobile ",
+      "nickname": "Mobile App",
+      "type": "integer",
+      "alternatives": [
+        "mobile_mobileSite",
+        "web_landingPages",
+        "web_companyWebsite"
+      ],
+      "isBlockedBySystem": true,
+      "category": "mobile",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 1350,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 3,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "events_onlineEvents_workshop": {
+      "maxMatchValue": 5000,
+      "source": "workshop",
+      "medium": "online event",
+      "nickname": "Online Workshop",
+      "type": "integer",
+      "alternatives": [
+        "events_onlineEvents_webinar",
+        "events_onlineEvents_podcast",
+        "content_contentCreation_videos"
+      ],
+      "isBlockedBySystem": false,
+      "category": "online event",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 400,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 2,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "events_onlineEvents_podcast": {
+      "maxMatchValue": 5000,
+      "source": "podcast",
+      "medium": "online event",
+      "nickname": "Podcast",
+      "type": "integer",
+      "alternatives": [
+        "events_onlineEvents_webinar",
+        "events_onlineEvents_workshop",
+        "social_communityBuilding"
+      ],
+      "isBlockedBySystem": false,
+      "category": "online event",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 400,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 2,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "events_onlineEvents_webinar": {
+      "maxMatchValue": 5000,
+      "source": "webinar",
+      "medium": "online event",
+      "nickname": "Webinar",
+      "type": "integer",
+      "alternatives": [
+        "events_onlineEvents_podcast",
+        "events_onlineEvents_workshop",
+        "social_influencerOutreach"
+      ],
+      "isBlockedBySystem": false,
+      "category": "online event",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 350,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 2,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "events_offlineEvents_running": {
+      "maxMatchValue": 5000,
+      "source": "create event",
+      "medium": "offline",
+      "nickname": "Organising (Event)",
+      "type": "integer",
+      "alternatives": [
+        "PR_publicity_pressReleases",
+        "events_offlineEvents_sponsorship",
+        "advertising_magazines_professional"
+      ],
+      "isBlockedBySystem": false,
+      "category": "events",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 500,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 1,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "events_offlineEvents_showcase": {
+      "maxMatchValue": 5000,
+      "source": "showcase event",
+      "medium": "offline",
+      "nickname": "Showcase (Event)",
+      "type": "integer",
+      "alternatives": [
+        "events_offlineEvents_speakingEngagements",
+        "mobile_mobileApp",
+        "viral_recommendAFriend_referralProgram"
+      ],
+      "isBlockedBySystem": false,
+      "category": "events",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 350,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 1,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "events_offlineEvents_speakingEngagements": {
+      "maxMatchValue": 5000,
+      "source": "speaking event",
+      "medium": "offline",
+      "nickname": "Speaking Engagement (Event)",
+      "type": "integer",
+      "alternatives": [
+        "events_offlineEvents_sponsorship",
+        "events_onlineEvents_workshop",
+        "events_onlineEvents_podcast"
+      ],
+      "isBlockedBySystem": false,
+      "category": "events",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 300,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 1,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "events_offlineEvents_sponsorship": {
+      "maxMatchValue": 5000,
+      "source": "sponsorship event",
+      "medium": "offline",
+      "nickname": "Sponsorship (Event)",
+      "type": "integer",
+      "alternatives": [
+        "events_offlineEvents_speakingEngagements",
+        "events_onlineEvents_podcast",
+        "social_communityBuilding"
+      ],
+      "isBlockedBySystem": false,
+      "category": "events",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 450,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 1,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "engineeringAsMarketing": {
+      "maxMatchValue": 5000,
+      "source": "tool",
+      "medium": "content",
+      "nickname": "Engineering as Marketing (tool)",
+      "type": "integer",
+      "alternatives": [
+        "content_contentPromotion_targetingBlogs",
+        "partners_affiliatePrograms",
+        "advertising_paidReviews"
+      ],
+      "isBlockedBySystem": false,
+      "category": "content",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 250,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 1,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "email": {
+      "maxMatchValue": 5000,
+      "source": "(email type - newsletter, etc)",
+      "medium": "email",
+      "nickname": "Email",
+      "type": "integer",
+      "alternatives": [
+        "telemarketing",
+        "web_landingPages",
+        "partners_affiliatePrograms"
+      ],
+      "isBlockedBySystem": false,
+      "category": "email",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 300,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 3,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "content_contentCreation_caseStudies": {
+      "maxMatchValue": 5000,
+      "source": "case study",
+      "medium": "content",
+      "nickname": "Case Study",
+      "type": "integer",
+      "alternatives": [
+        "content_contentCreation_companyBlog",
+        "content_contentCreation_researchPaper",
+        "content_contentCreation_videos"
+      ],
+      "isBlockedBySystem": false,
+      "category": "content",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 300,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 3,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "content_contentCreation_videos": {
+      "maxMatchValue": 5000,
+      "source": "video",
+      "medium": "content",
+      "nickname": "Video",
+      "type": "integer",
+      "alternatives": [
+        "content_contentCreation_eBook",
+        "content_contentCreation_imagesAndInfographics",
+        "content_contentCreation_presentations"
+      ],
+      "isBlockedBySystem": false,
+      "category": "content",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 550,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 2,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "content_contentCreation_eBook": {
+      "maxMatchValue": 5000,
+      "source": "e-book",
+      "medium": "content",
+      "nickname": "E-book",
+      "type": "integer",
+      "alternatives": [
+        "content_contentCreation_imagesAndInfographics",
+        "content_contentCreation_presentations",
+        "content_contentCreation_researchPaper"
+      ],
+      "category": "content",
+      "isBlockedBySystem": false,
+      "monthBudgetLimits": {
+        "range": {
+          "min": 300,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 3,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "content_contentCreation_researchPaper": {
+      "maxMatchValue": 5000,
+      "source": "whitepaper",
+      "medium": "content",
+      "nickname": "Whitepaper",
+      "type": "integer",
+      "alternatives": [
+        "content_contentCreation_eBook",
+        "content_contentCreation_imagesAndInfographics",
+        "content_contentCreation_presentations"
+      ],
+      "isBlockedBySystem": false,
+      "category": "content",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 300,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 3,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "content_contentCreation_reportSponsorship": {
+      "maxMatchValue": 5000,
+      "source": "report-sponsorship",
+      "medium": "content",
+      "nickname": "Report Sponsorship",
+      "type": "integer",
+      "alternatives": [
+        "content_contentCreation_presentations",
+        "content_contentCreation_imagesAndInfographics",
+        "content_contentCreation_eBook"
+      ],
+      "isBlockedBySystem": false,
+      "category": "content",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 300,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 1,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "content_contentCreation_presentations": {
+      "maxMatchValue": 5000,
+      "source": "presentation",
+      "medium": "content",
+      "nickname": "Presentation",
+      "type": "integer",
+      "alternatives": [
+        "content_contentCreation_imagesAndInfographics",
+        "content_contentCreation_eBook",
+        "content_contentCreation_reportSponsorship"
+      ],
+      "isBlockedBySystem": false,
+      "category": "content",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 250,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 1,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "content_contentCreation_imagesAndInfographics": {
+      "maxMatchValue": 5000,
+      "source": "image or infographic",
+      "medium": "content",
+      "nickname": "Image & Infographic",
+      "type": "integer",
+      "alternatives": [
+        "content_contentCreation_eBook",
+        "content_contentCreation_presentations",
+        "content_contentCreation_researchPaper"
+      ],
+      "isBlockedBySystem": false,
+      "category": "content",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 250,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 1,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "content_contentCreation_companyBlog": {
+      "maxMatchValue": 5000,
+      "source": "website",
+      "medium": "blog",
+      "nickname": "Company Blog",
+      "type": "integer",
+      "alternatives": [
+        "content_contentCreation_researchPaper",
+        "content_contentCreation_caseStudies",
+        "content_contentCreation_eBook"
+      ],
+      "isBlockedBySystem": false,
+      "category": "content",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 200,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 3,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "content_contentPromotion_forums_other": {
+      "maxMatchValue": 5000,
+      "source": "(Forum name)",
+      "medium": "forum",
+      "nickname": "Forums - Niche Specific",
+      "type": "integer",
+      "alternatives": [
+        "content_contentPromotion_contentDiscovery_other",
+        "content_contentPromotion_contentDiscovery_taboola",
+        "social_quora"
+      ],
+      "isBlockedBySystem": false,
+      "category": "social",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 200,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 2,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "content_contentPromotion_contentDiscovery_other": {
+      "maxMatchValue": 5000,
+      "source": "(content discovery platform/network)",
+      "medium": "content discovery",
+      "nickname": "Content Discovery - General",
+      "type": "integer",
+      "alternatives": [
+        "content_contentPromotion_contentDiscovery_taboola",
+        "content_contentPromotion_contentDiscovery_outbrain",
+        "content_contentPromotion_forums_other"
+      ],
+      "isBlockedBySystem": false,
+      "category": "content discovery",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 300,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 2,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "content_contentPromotion_contentDiscovery_taboola": {
+      "maxMatchValue": 5000,
+      "source": "taboola",
+      "medium": "content discovery",
+      "nickname": "Taboola",
+      "type": "integer",
+      "alternatives": [
+        "content_contentPromotion_contentDiscovery_outbrain",
+        "social_quora",
+        "content_contentPromotion_contentDiscovery_other"
+      ],
+      "isBlockedBySystem": false,
+      "category": "content discovery",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 300,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 2,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "content_contentPromotion_contentDiscovery_outbrain": {
+      "maxMatchValue": 5000,
+      "source": "outbrain",
+      "medium": "content discovery",
+      "nickname": "Outbrain",
+      "type": "integer",
+      "alternatives": [
+        "content_contentPromotion_contentDiscovery_taboola",
+        "social_reddit",
+        "social_quora"
+      ],
+      "isBlockedBySystem": false,
+      "category": "content discovery",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 300,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 2,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "content_contentPromotion_targetingBlogs": {
+      "maxMatchValue": 5000,
+      "source": "guest",
+      "medium": "paid content",
+      "nickname": "Guest Post",
+      "type": "integer",
+      "alternatives": [
+        "social_reddit",
+        "social_quora",
+        "content_contentPromotion_contentDiscovery_outbrain"
+      ],
+      "isBlockedBySystem": false,
+      "category": "PR",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 350,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 2,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "advertising_celebrityEndorsements": {
+      "maxMatchValue": 5000,
+      "source": "celebrity endorsement",
+      "medium": "offline",
+      "nickname": "Celebrity Endorsement",
+      "type": "integer",
+      "alternatives": [
+        "advertising_paidReviews",
+        "advertising_offlineAds_TV",
+        "advertising_magazines_professional"
+      ],
+      "isBlockedBySystem": true,
+      "category": "social",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 20000,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 3,
+        "max": -1
+      },
+      "importance": 0
+    },
+    "advertising_paidReviews": {
+      "maxMatchValue": 5000,
+      "source": "(reviews website)",
+      "medium": "paid review",
+      "nickname": "Paid Reviews",
+      "type": "integer",
+      "alternatives": [
+        "advertising_celebrityEndorsements",
+        "advertising_offlineAds_TV",
+        "advertising_magazines_professional"
+      ],
+      "isBlockedBySystem": false,
+      "category": "business directories",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 250,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 2,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "advertising_magazines_professional": {
+      "maxMatchValue": 5000,
+      "source": "(magazine)",
+      "medium": "magazine",
+      "nickname": "Magazine (Professional) Ad",
+      "type": "integer",
+      "alternatives": [
+        "advertising_offlineAds_newspaper",
+        "advertising_offlineAds_billboard",
+        "advertising_offlineAds_TV"
+      ],
+      "isBlockedBySystem": false,
+      "category": "magazines",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 750,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 3,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "advertising_magazines_consumers": {
+      "maxMatchValue": 5000,
+      "source": "(magazine)",
+      "medium": "magazine",
+      "nickname": "Magazine (Consumers) Ad",
+      "type": "integer",
+      "alternatives": [
+        "advertising_magazines_professional",
+        "advertising_displayAds_googleAdwords",
+        "advertising_paidReviews"
+      ],
+      "isBlockedBySystem": false,
+      "category": "magazines",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 2000,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 3,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "advertising_mobile_inAppAds": {
+      "maxMatchValue": 5000,
+      "source": "in-app",
+      "medium": "paid",
+      "nickname": "In-app ads",
+      "type": "integer",
+      "alternatives": [
+        "advertising_displayAds_googleAdwords",
+        "advertising_mobile_incentivizedCPI",
+        "advertising_mobile_nonIncentivizedCPI"
+      ],
+      "isBlockedBySystem": false,
+      "category": "mobile",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 1200,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 1,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "advertising_mobile_ASO": {
+      "maxMatchValue": 5000,
+      "source": "app store",
+      "medium": "organic",
+      "nickname": "ASO (App Store Optimization)",
+      "type": "integer",
+      "alternatives": [
+        "advertising_mobile_inAppAds",
+        "advertising_mobile_incentivizedCPI",
+        "advertising_mobile_nonIncentivizedCPI"
+      ],
+      "isBlockedBySystem": false,
+      "category": "mobile",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 2300,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 1,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "advertising_mobile_nonIncentivizedCPI": {
+      "maxMatchValue": 5000,
+      "source": "CPI",
+      "medium": "organic",
+      "nickname": "Non-Incentivized CPI",
+      "type": "integer",
+      "alternatives": [
+        "advertising_mobile_incentivizedCPI",
+        "advertising_mobile_ASO",
+        "advertising_mobile_inAppAds"
+      ],
+      "isBlockedBySystem": false,
+      "category": "mobile",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 1300,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 1,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "advertising_mobile_incentivizedCPI": {
+      "maxMatchValue": 5000,
+      "source": "CPI",
+      "medium": "paid",
+      "nickname": "Incentivized CPI",
+      "type": "integer",
+      "alternatives": [
+        "advertising_mobile_nonIncentivizedCPI",
+        "advertising_mobile_inAppAds",
+        "advertising_displayAds_googleAdwords"
+      ],
+      "isBlockedBySystem": false,
+      "category": "mobile",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 1500,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 1,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "advertising_offlineAds_SMS": {
+      "maxMatchValue": 5000,
+      "source": "(sms type - newsletter, etc)",
+      "medium": "sms",
+      "nickname": "SMS",
+      "type": "integer",
+      "alternatives": [
+        "advertising_offlineAds_newspaper",
+        "advertising_magazines_consumers",
+        "email"
+      ],
+      "isBlockedBySystem": false,
+      "category": "mobile",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 750,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 1,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "advertising_offlineAds_billboard": {
+      "maxMatchValue": 5000,
+      "source": "billboard",
+      "medium": "offline",
+      "nickname": "Billboard Ad",
+      "type": "integer",
+      "alternatives": [
+        "advertising_magazines_consumers",
+        "advertising_magazines_professional",
+        "advertising_offlineAds_TV"
+      ],
+      "category": "billboards",
+      "isBlockedBySystem": true,
+      "monthBudgetLimits": {
+        "range": {
+          "min": 3500,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 1,
+        "max": -1
+      },
+      "importance": 0
+    },
+    "advertising_offlineAds_newspaper": {
+      "maxMatchValue": 5000,
+      "source": "(newspaper)",
+      "medium": "newspaper",
+      "nickname": "Newspaper Ad",
+      "type": "integer",
+      "alternatives": [
+        "advertising_magazines_consumers",
+        "advertising_displayAds_googleAdwords",
+        "advertising_displayAds_other"
+      ],
+      "isBlockedBySystem": true,
+      "category": "newspapers",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 4000,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 1,
+        "max": -1
+      },
+      "importance": 0
+    },
+    "advertising_offlineAds_radio": {
+      "maxMatchValue": 5000,
+      "source": "(radio channel)",
+      "medium": "radio",
+      "nickname": "Radio Ad",
+      "type": "integer",
+      "alternatives": [
+        "advertising_offlineAds_newspaper",
+        "advertising_displayAds_googleAdwords",
+        "advertising_magazines_consumers"
+      ],
+      "category": "radio",
+      "isBlockedBySystem": false,
+      "monthBudgetLimits": {
+        "range": {
+          "min": 3000,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 3,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "advertising_offlineAds_TV": {
+      "maxMatchValue": 5000,
+      "source": "(tv channel)",
+      "medium": "tv",
+      "nickname": "TV Commercial",
+      "type": "integer",
+      "isBlockedBySystem": true,
+      "alternatives": [
+        "advertising_celebrityEndorsements",
+        "advertising_paidReviews",
+        "advertising_displayAds_googleAdwords"
+      ],
+      "category": "TV",
+      "monthBudgetLimits": {
+        "range": {
+          "min": 4500,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 3,
+        "max": -1
+      },
+      "importance": 0
+    },
+    "advertising_socialAds_youtubeAdvertising": {
+      "maxMatchValue": 5000,
+      "source": "youtube",
+      "medium": "social paid",
+      "nickname": "YouTube - Paid",
+      "type": "integer",
+      "alternatives": [
+        "advertising_socialAds_linkedinAdvertising",
+        "advertising_socialAds_GooglePlusAdvertising",
+        "advertising_socialAds_twitterAdvertising"
+      ],
+      "category": "social paid",
+      "isBlockedBySystem": false,
+      "monthBudgetLimits": {
+        "range": {
+          "min": 350,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 1,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "advertising_socialAds_GooglePlusAdvertising": {
+      "maxMatchValue": 5000,
+      "source": "google plus",
+      "medium": "social paid",
+      "nickname": "Google+ - Paid",
+      "type": "integer",
+      "alternatives": [
+        "advertising_socialAds_linkedinAdvertising",
+        "advertising_socialAds_twitterAdvertising",
+        "advertising_socialAds_facebookAdvertising"
+      ],
+      "category": "social paid",
+      "isBlockedBySystem": false,
+      "monthBudgetLimits": {
+        "range": {
+          "min": 350,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 1,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "advertising_socialAds_pinterestAdvertising": {
+      "maxMatchValue": 5000,
+      "source": "pinterest",
+      "medium": "social paid",
+      "nickname": "Pinterest - Paid",
+      "type": "integer",
+      "alternatives": [
+        "advertising_socialAds_instagramAdvertising",
+        "advertising_socialAds_facebookAdvertising",
+        "advertising_socialAds_twitterAdvertising"
+      ],
+      "category": "social paid",
+      "isBlockedBySystem": true,
+      "monthBudgetLimits": {
+        "range": {
+          "min": 900,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 1,
+        "max": -1
+      },
+      "importance": 0
+    },
+    "advertising_socialAds_instagramAdvertising": {
+      "maxMatchValue": 5000,
+      "source": "instagram",
+      "medium": "social paid",
+      "nickname": "Instagram - Paid",
+      "type": "integer",
+      "alternatives": [
+        "advertising_socialAds_pinterestAdvertising",
+        "advertising_socialAds_facebookAdvertising",
+        "advertising_socialAds_youtubeAdvertising"
+      ],
+      "category": "social paid",
+      "isBlockedBySystem": false,
+      "monthBudgetLimits": {
+        "range": {
+          "min": 800,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 1,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "advertising_socialAds_linkedinAdvertising": {
+      "maxMatchValue": 5000,
+      "source": "linkedin",
+      "medium": "social paid",
+      "nickname": "LinkedIn - Paid",
+      "type": "integer",
+      "alternatives": [
+        "advertising_socialAds_twitterAdvertising",
+        "advertising_socialAds_facebookAdvertising",
+        "advertising_socialAds_GooglePlusAdvertising"
+      ],
+      "category": "social paid",
+      "isBlockedBySystem": false,
+      "monthBudgetLimits": {
+        "range": {
+          "min": 350,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 1,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "advertising_socialAds_twitterAdvertising": {
+      "maxMatchValue": 5000,
+      "source": "twitter",
+      "medium": "social paid",
+      "nickname": "Twitter - Paid",
+      "type": "integer",
+      "alternatives": [
+        "advertising_socialAds_linkedinAdvertising",
+        "advertising_socialAds_facebookAdvertising",
+        "advertising_socialAds_GooglePlusAdvertising"
+      ],
+      "category": "social paid",
+      "isBlockedBySystem": false,
+      "monthBudgetLimits": {
+        "range": {
+          "min": 250,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 1,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "advertising_socialAds_facebookAdvertising": {
+      "maxMatchValue": 5000,
+      "source": "facebook",
+      "medium": "social paid",
+      "nickname": "Facebook - Paid",
+      "type": "integer",
+      "alternatives": [
+        "advertising_socialAds_linkedinAdvertising",
+        "advertising_socialAds_instagramAdvertising",
+        "advertising_socialAds_twitterAdvertising"
+      ],
+      "category": "social paid",
+      "isBlockedBySystem": false,
+      "monthBudgetLimits": {
+        "range": {
+          "min": 250,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 1,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "advertising_searchMarketing_SEM_onlineDirectories": {
+      "maxMatchValue": 5000,
+      "source": "(online directory)",
+      "medium": "cpc",
+      "nickname": "PPC - Online Directories",
+      "type": "integer",
+      "alternatives": [
+        "advertising_paidReviews",
+        "advertising_searchMarketing_SEM_googleAdwords",
+        "advertising_searchMarketing_SEM_bing"
+      ],
+      "category": "business directories",
+      "isBlockedBySystem": false,
+      "monthBudgetLimits": {
+        "range": {
+          "min": 250,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 1,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "advertising_searchMarketing_SEM_other": {
+      "maxMatchValue": 5000,
+      "source": "(cpc network)",
+      "medium": "cpc",
+      "nickname": "PPC - Generic",
+      "type": "integer",
+      "alternatives": [
+        "advertising_searchMarketing_SEM_googleAdwords",
+        "advertising_searchMarketing_SEM_bing",
+        "advertising_displayAds_googleAdwords"
+      ],
+      "category": "Paid Search",
+      "isBlockedBySystem": false,
+      "monthBudgetLimits": {
+        "range": {
+          "min": 250,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 1,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "advertising_searchMarketing_SEM_googleAdwords": {
+      "maxMatchValue": 5000,
+      "source": "google",
+      "medium": "cpc",
+      "nickname": "PPC - Google AdWords",
+      "type": "integer",
+      "alternatives": [
+        "advertising_searchMarketing_SEM_bing",
+        "advertising_searchMarketing_SEM_other",
+        "advertising_displayAds_googleAdwords"
+      ],
+      "category": "Paid Search",
+      "isBlockedBySystem": false,
+      "monthBudgetLimits": {
+        "range": {
+          "min": 200,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 1,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "advertising_searchMarketing_SEM_bing": {
+      "maxMatchValue": 5000,
+      "source": "bing",
+      "medium": "cpc",
+      "nickname": "PPC - Bing",
+      "type": "integer",
+      "alternatives": [
+        "advertising_searchMarketing_SEM_googleAdwords",
+        "advertising_searchMarketing_SEM_other",
+        "advertising_displayAds_googleAdwords"
+      ],
+      "category": "Paid Search",
+      "isBlockedBySystem": false,
+      "monthBudgetLimits": {
+        "range": {
+          "min": 200,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 1,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "advertising_searchMarketing_SEO": {
+      "maxMatchValue": 5000,
+      "source": "search",
+      "medium": "organic",
+      "nickname": "SEO",
+      "type": "integer",
+      "alternatives": [
+        "advertising_searchMarketing_SEM_googleAdwords",
+        "advertising_searchMarketing_SEM_other",
+        "advertising_displayAds_googleAdwords"
+      ],
+      "category": "Organic Search",
+      "isBlockedBySystem": false,
+      "monthBudgetLimits": {
+        "range": {
+          "min": 250,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 2,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "advertising_displayAds_other": {
+      "maxMatchValue": 5000,
+      "source": "(display network)",
+      "medium": "display",
+      "nickname": "Display Ads - Generic",
+      "type": "integer",
+      "alternatives": [
+        "advertising_displayAds_googleAdwords",
+        "advertising_searchMarketing_SEM_googleAdwords",
+        "advertising_searchMarketing_SEM_other"
+      ],
+      "category": "display",
+      "isBlockedBySystem": false,
+      "monthBudgetLimits": {
+        "range": {
+          "min": 350,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 1,
+        "max": -1
+      },
+      "importance": -1
+    },
+    "advertising_displayAds_googleAdwords": {
+      "maxMatchValue": 5000,
+      "source": "google",
+      "medium": "display",
+      "nickname": "Display Ads - Google AdWords",
+      "type": "integer",
+      "alternatives": [
+        "advertising_displayAds_other",
+        "advertising_searchMarketing_SEM_googleAdwords",
+        "advertising_searchMarketing_SEM_other"
+      ],
+      "category": "display",
+      "isBlockedBySystem": false,
+      "monthBudgetLimits": {
+        "range": {
+          "min": 350,
+          "max": -1
+        }
+      },
+      "monthTimeRange": {
+        "min": 1,
+        "max": -1
+      },
+      "importance": -1
+    }
+  }
+}

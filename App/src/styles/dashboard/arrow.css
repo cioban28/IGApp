@@ -1,0 +1,29 @@
+.arrow {
+    width: 33px;
+    height: 26px;
+    background-color: #005e7c80;
+    display: inline-flex;
+    position: relative;
+    margin: 117px 13px 0 12px;
+}
+
+.arrow:before {
+    content:" ";
+    position: absolute;
+    border-top: 13px solid transparent;
+    border-bottom: 13px solid transparent;
+}
+.arrow:before {
+    left: 100%;
+    border-left: 13px solid #005e7c80;
+}
+
+.conversion {
+    font-size: 11px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 7px;
+}

@@ -1,0 +1,39 @@
+.inner {
+    display: flex;
+    padding: 20px;
+    background-color: #E6E6E6;
+}
+
+.robot {
+    background: url(/assets/robotForUI.svg) center center no-repeat;
+    width: 250px;
+    height: 200px;
+    background-size: contain;
+    margin-left: -25px;
+    margin-right: -50px;
+}
+
+.text-bubble {
+    background: #189ACA;
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+    position: relative;
+    margin: auto 0;
+    padding: 20px;
+    color: white;
+}
+
+.text-bubble::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-left-color: #189ACA;
+    border-right: 0;
+    margin-top: -15px;
+    margin-right: -15px;
+}

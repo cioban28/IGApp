@@ -1,0 +1,27 @@
+.cards {
+    overflow-y: auto;
+    min-height: 40px;
+    height: 100%;
+    margin: 0 5px 20px;
+}
+
+.cards-placeholder, .cards-placeholder:hover {
+    height: 100px;
+    background: repeating-linear-gradient(30deg, rgba(17, 101, 163, 0.6), rgba(17, 101, 163, 0.6) 5px, rgba(17, 101, 163, 0.56) 5px, rgba(17, 101, 163, 0.56) 20px)!important;
+}
+
+.cards::-webkit-scrollbar {
+    height: 9px;
+    width: 9px;
+    -webkit-appearance: none;
+}
+
+.cards::-webkit-scrollbar-track-piece {
+    background: #d6dade;
+    border-radius: 5px;
+}
+
+.cards::-webkit-scrollbar-thumb {
+    background-color: #c4c9cc;
+    border-radius: 5px;
+}

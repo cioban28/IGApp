@@ -1,0 +1,38 @@
+server {
+	listen 80 default_server;
+
+	root /home/ubuntu/InfiniGrow/IGApp/output;
+	index index.html index.htm;
+
+    if ($http_x_forwarded_proto != 'https') {
+        rewrite ^ https://$host$request_uri? permanent;
+    }
+
+    location /api/ {
+            rewrite ^/api/(.*) /$1 break;
+             proxy_pass http://localhost:3000;
+             proxy_http_version 1.1;
+             proxy_set_header Upgrade $http_upgrade;
+             proxy_set_header Connection 'upgrade';
+             proxy_set_header Host $host;
+             proxy_cache_bypass $http_upgrade;
+    }
+
+location /payment/ {
+            rewrite ^/payment/(.*) /$1 break;
+             proxy_pass http://localhost:3001;
+             proxy_http_version 1.1;
+             proxy_set_header Upgrade $http_upgrade;
+             proxy_set_header Connection 'upgrade';
+             proxy_set_header Host $host;
+             proxy_cache_bypass $http_upgrade;
+    }
+
+	location / {
+		try_files $uri /index.html;
+
+		add_header Cache-Control must-revalidate;
+        etag on;
+	}
+
+}

@@ -1,0 +1,196 @@
+.root {
+    position: relative;
+}
+
+.table {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.cell--category {
+    align-items: center;
+    background-color: rgba(222, 235, 255, 0.32);
+    border-bottom: 1px solid rgba(106, 154, 230, 0.19) !important;
+    border-top: 1px solid rgba(106, 154, 230, 0.19) !important;
+    display: flex;
+    flex-grow: 1;
+}
+
+.cell--header {
+    align-items: center;
+    color: #99a4c2 !important;
+    display: flex;
+    font-size: 11px;
+    height: 48px !important;
+    letter-spacing: 0.1px;
+    outline: none !important;
+    padding: 0 0 0 10px !important;
+    text-transform: uppercase;
+}
+
+.cell--active {
+    color: #4d91fc !important;
+    border-bottom: 2px solid #4d91fc !important;
+}
+
+.cell--history {
+    background-color: rgba(112, 126, 167, 0.13);
+}
+
+.cell--annual {
+    color: #ffffff !important;
+    background-color: #4d91fc !important;
+}
+
+.cell--quarter {
+    background-color: #dae8ff;
+}
+
+.cell--default {
+    background-color: #fff;
+}
+
+.cell--annual-category {
+    background-color: #7aadfc;
+}
+
+.cell--category-wrapper {
+    padding: 0 !important;
+    display: flex !important;
+    align-items: stretch !important;
+}
+.cell--category--editable {
+    &:hover,
+    &:active,
+    &:focus {
+        .button-add {
+            opacity: 1;
+        }
+    }
+}
+
+.row--category {
+}
+
+.row--category__title {
+    padding-left: 22px !important;
+}
+
+.cell__title-offset {
+    padding-left: 32px !important;
+}
+
+.channel {
+    align-items: center;
+    color: #222a41;
+    display: flex;
+    margin-left: 32px;
+    text-transform: capitalize;
+}
+
+.container {
+    position: relative;
+}
+
+.button-icon {
+    @mixin nulled-button;
+    font-size: 0;
+}
+
+.button-up {
+    background-color: #ffffff;
+    border-radius: 100%;
+    border: solid 1px #d9e7fa;
+    color: #4D91FC;
+    composes: button-icon;
+    height: 20px;
+    left: 6px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+
+    &--action {
+      background-color: #4d91fc;
+      border-color: #4d91fc;
+    }
+}
+
+.button-controls {
+    background-color: white;
+    composes: button-icon;
+    line-height: 48px;
+    position: absolute;
+    vertical-align: middle;
+    width: 30px;
+    z-index: 4;
+
+    &--prev {
+        left: 280px;
+    }
+
+    &--next {
+        right: 0;
+    }
+}
+
+.button-add {
+    margin-left: 5px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    width: 80px;
+}
+
+.icon {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    height: 12px;
+    margin: 0 6px;
+    position: relative;
+    transition: transform 0.15s;
+    width: 12px;
+
+    &--large {
+        height: 32px;
+        margin: 0 12px 0 0;
+        width: 32px;
+    }
+
+    &__controls {
+        height: 13px;
+        top: -1px;
+        vertical-align: middle;
+        width: 7px;
+    }
+    &__controls--back {
+        transform: scale(-1);
+    }
+    &__up {
+        height: 8px;
+        margin: 0;
+        transform: rotate(-90deg);
+        width: 8px;
+    }
+    &__down {
+        transform: rotate(90deg);
+    }
+}
+
+.scrollable-container {
+    overflow: auto;
+    position: relative;
+    transform: translateZ(0);
+}
+
+.collapse-all :global(.rt-noData) {
+    display: none;
+}
+
+@mixin icon-nodpi plan:monthNavigation, /assets/plan_icons/shape;
+@mixin icon-nodpi plan:monthNavigationWhite, /assets/plan_icons/shape-white;
+@mixin icon-nodpi plan:removeChannel, /assets/plan_icons/delete;
+@mixin icon-nodpi plan:addChannel , /assets/plus-blue;
+@mixin icon-nodpi plan:editChannel, /assets/plan_icons/edit-grey;

@@ -1,0 +1,22 @@
+.wrap {
+  max-width: 1162px;
+  padding: 0 20px 120px;
+}
+
+.row {
+  border-bottom: 1px solid #e7e9ed;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.row:last-child {
+  border: none;
+}
+
+@media (max-width: 769px) {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

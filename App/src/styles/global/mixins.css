@@ -1,0 +1,84 @@
+@define-mixin icon $name, $icon, $type: png {
+  :global([data-icon="$(name)"]) {
+    background-image: url('$(icon).$(type)');
+  }
+
+  @media
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
+    :global([data-icon="$(name)"]) {
+      background-image: url('$(icon)@2x.$(type)');
+    }
+  }
+
+  @media
+  (-webkit-min-device-pixel-ratio: 3),
+  (min-resolution: 288dpi) {
+    :global([data-icon="$(name)"]) {
+      background-image: url('$(icon)@3x.$(type)');
+    }
+  }
+}
+
+@define-mixin icon-nodpi $name, $icon, $type: svg {
+  :global([data-icon="$(name)"]) {
+    background-image: url('$(icon).$(type)');
+  }
+}
+
+@define-mixin display2x {
+  @media
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
+    @mixin-content;
+  }
+}
+
+@define-mixin display3x {
+  @media
+  (-webkit-min-device-pixel-ratio: 3),
+  (min-resolution: 288dpi) {
+    @mixin-content;
+  }
+}
+
+@define-mixin image, $selector, $image, $type: png {
+  $(selector) {
+    background-image: url('$(image).$(type)');
+  }
+
+  @media
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
+    $(selector) {
+      background-image: url('$(icon)@2x.$(type)');
+    }
+  }
+
+  @media
+  (-webkit-min-device-pixel-ratio: 3),
+  (min-resolution: 288dpi) {
+    $(selector) {
+      background-image: url('$(icon)@3x.$(type)');
+    }
+  }
+}
+
+@define-mixin font-smooth-auto {
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+}
+
+@define-mixin fira-font {
+  font-family: "Fira Sans", Arial, sans-serif;
+}
+
+@define-mixin nulled-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+
+  outline: none;
+  padding: 0;
+}

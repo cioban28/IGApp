@@ -1,0 +1,8 @@
+.inner {
+    overflow: inherit;
+}
+
+.content {
+    padding: 40px 38px;
+    margin: 0;
+}

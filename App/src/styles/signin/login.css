@@ -1,0 +1,105 @@
+@import "../global/mixins.css";
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titles {
+    color: #222a41;
+    margin-bottom: 25px;
+}
+
+.check-boxes {
+    align-self: center;
+}
+
+.title {
+    composes: titles;
+    font-size: 36px;
+    font-weight: 600
+}
+
+.sub-title {
+    composes: titles;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.login-wrapper{
+    width: 400px;
+    height: fit-content;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px 0 rgba(227, 230, 244, 0.5);
+    border: solid 1px #e3e6f4;
+    background-color: #ffffff;
+    padding: 0 75px 3px 75px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.checkbox-wrapper {
+    display: flex;
+    margin-top: 35px;
+}
+
+.logo {
+    background: url(/assets/linkedin-logo-igfinal.gif) center center no-repeat;
+    background-size: contain;
+    background-color: #273142;
+    width: 150px;
+    height: 150px;
+    margin: 40px 0;
+}
+
+.checkbox-label {
+    font-size: 16px;
+    font-weight: normal;
+    text-align: left;
+}
+
+.input {
+    height: 38px;
+    border-radius: 8px;
+    border: solid 3px #e3e6f4;
+    font-size: 14px;
+    font-weight: normal;
+    color: #4b515e;
+    padding-left: 15px;
+}
+
+.input-label {
+    color: #4b515e;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 14px;
+}
+
+.input-field {
+    margin-top: 30px;
+    display: grid;
+    text-align: left;
+}
+
+.bottom {
+    color: #4b515e;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.error {
+    margin-top: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 2.08;
+    color: #ee2032;
+    white-space: pre;
+    text-align: left;
+    align-self: center;
+}
+
+@mixin icon-nodpi checkbox:checked-blue, /assets/checked-blue;

@@ -1,0 +1,55 @@
+.channels-row {
+  display: flex;
+  margin-bottom: 16px;
+  align-items: center;
+}
+
+.channels-remove {
+  margin-top: 36px;
+  margin-left: 6px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  width: 28px;
+}
+
+.error {
+  color: red;
+  margin-top: 40px;
+  margin-left: 11px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  width: 200px;
+}
+
+.blocked-label {
+  font-weight: 600;
+  color: #24b10e;
+  margin-bottom: 0;
+}
+
+.divide-equally {
+  margin-left: 38px;
+  margin-top: 12px;
+}
+
+.advanced-button {
+  margin-top: 55px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #1165A3;
+  text-decoration: underline;
+}
+
+.add-objective {
+  background: url(/assets/plus.svg) center center no-repeat;
+  background-size: 24px auto;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.objective-text {
+  font-weight: 600;
+}

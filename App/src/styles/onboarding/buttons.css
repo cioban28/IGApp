@@ -1,0 +1,14 @@
+@import "../global/mixins.css";
+
+.plan-button {
+
+}
+
+@mixin icon-nodpi buttons:plan, /assets/plan;
+@mixin icon-nodpi buttons:plan-disabled, /assets/plan-disabled;
+@mixin icon-nodpi buttons:save, /assets/save;
+@mixin icon-nodpi buttons:done, /assets/done-checkmark;
+@mixin icon-nodpi buttons:edit, /assets/edit-blue;
+@mixin icon-nodpi buttons:copy, /assets/copy-documents-option;
+@mixin icon-nodpi buttons:approve, /assets/approve;
+@mixin icon-nodpi buttons:decline, /assets/decline;

@@ -1,0 +1,44 @@
+.content {
+    margin: 0;
+    padding: 40px 38px;
+}
+
+.inner {
+    overflow: initial;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #646973;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.file-name {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    margin-top: 7px;
+}
+
+.field {
+    width: 160px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #646973;
+}
+
+.buttons {
+    display: flex;
+    margin-top: 70px;
+}

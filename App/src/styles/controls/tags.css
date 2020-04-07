@@ -1,0 +1,64 @@
+/* The baseline for the style is the example style in the react-tag-input code */
+div.tags {
+    position: relative;
+}
+
+div.tag-input {
+    width: 200px;
+    border-radius: 2px;
+    display: inline-block;
+}
+
+div.tag-input input.tag-input-field,
+div.tag-input input.tag-input-field:focus {
+    height: 36px;
+    margin: 0;
+    font-size: 12px;
+    width: 100%;
+    border: 1px solid #eee;
+    padding: 0 14px;
+}
+
+div.selected span.tag {
+    border: 1px solid #ddd;
+    background: #eee;
+    font-size: 12px;
+    display: inline-block;
+    padding: 5px;
+    margin: 0 5px;
+    border-radius: 2px;
+}
+
+div.selected a.remove {
+    color: #aaa;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+div.suggestions {
+    position: absolute;
+}
+
+div.suggestions ul {
+    list-style-type: none;
+    box-shadow: .05em .01em .5em rgba(0, 0, 0, .2);
+    background: white;
+    width: 200px;
+}
+
+div.suggestions li {
+    border-bottom: 1px solid #ddd;
+    padding: 5px 10px;
+    margin: 0;
+}
+
+div.suggestions li mark {
+    text-decoration: underline;
+    background: none;
+    font-weight: 600;
+}
+
+div.suggestions ul li.active-suggestion {
+    background: #b7cfe0;
+    cursor: pointer;
+}

@@ -1,0 +1,28 @@
+.objective-icon {
+    width: 21px;
+    height: 21px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    opacity: 0.4;
+}
+
+.objective-icon:hover {
+    opacity: initial;
+}
+
+.reached-icon {
+    composes: objective-icon;
+    background-image: url(/assets/objectives-icons/goal-reached.svg);
+}
+
+.aligned-icon {
+    composes: objective-icon;
+    background-image: url(/assets/objectives-icons/on-track.svg);
+}
+
+.not-aligned-icon {
+    composes: objective-icon;
+    background-image: url(/assets/objectives-icons/off-track.svg);
+}

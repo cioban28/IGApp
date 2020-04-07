@@ -1,0 +1,249 @@
+.item {
+  width: 100%;
+  min-height: 100%;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px 0 rgba(54, 56, 64, 0.1);
+}
+
+.item-title {
+  position: relative;
+  font-size: 16px;
+  font-weight: 500;
+  color: #182033;
+  padding: 24px 24px 16px 24px;
+}
+
+.time-text {
+  font-size: 11px;
+  font-weight: 600;
+  color: #99a4c2;
+  text-transform: uppercase;
+  margin: 8px 0 0 0;
+}
+
+.settings-container {
+  position: absolute;
+  top: 26px;
+  right: 34px;
+}
+
+.settings {
+    background: url(/assets/analyze-icons/channels-settings.svg) center center no-repeat;
+    width: 20px;
+    height: 21px;
+    cursor: pointer;
+}
+
+/*
+  specifity issue with component's
+  default style
+*/
+.popup.popup {
+  top: 33px;
+  left: auto;
+  right: 0;
+  width: max-content;
+}
+
+.popup-content-container {
+  display: flex;
+}
+
+.popup-content-column {
+  display: grid;
+  width: calc((100% - 20px) / 2);
+  height: 215px;
+  overflow-y: auto;
+}
+
+.popup-content-column + .popup-content-column {
+  margin-left: 20px;
+}
+
+.popup-content-column-title {
+  font-size: 11px;
+  font-weight: 600;
+  color: #99a4c2;
+  margin: 0 0 15px 0;
+  text-transform: uppercase;
+}
+
+.checkboxContainer + .checkboxContainer {
+  margin-top: 10px;
+}
+
+.checkboxContainer .checkbox {
+  width: 17px;
+  height: 17px;
+  margin: 0 8px 0 0;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px 0 #e6e8f0;
+  border: solid 1px rgba(178, 187, 213, 0.5);
+  background-image: linear-gradient(to top, #fafafc, #ffffff);
+}
+
+.checkboxContainer .checkbox[data-checked] {
+  background: #4d91fc;
+}
+
+.checkboxContainer .checkbox-mark {
+  background: url(/assets/analyze-icons/channels-checkmark.svg) center center no-repeat;
+  background-size: 10px 7px;
+}
+
+.checkboxContainer .checkbox-label {
+  font-size: 14px;
+  color: #222a41;
+  font-weight: 400;
+}
+
+.chart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 332px;
+  padding: 16px 19px;
+  box-sizing: border-box;
+}
+
+.chart-legend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 32px 0;
+}
+
+.legend {
+  display: flex;
+  align-items: center;
+  margin: 0 24px 0 0;
+}
+
+.legend-thumbnail {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  margin: 0 6px 0 0;
+}
+
+.legend-label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #707ea7;
+}
+
+/* indicator's legend */
+.legend:last-child {
+  margin-right: 0;
+}
+
+.indicator-legend-thumbnail {
+  width: 6px;
+  height: 6px;
+  margin-right: 4px;
+  background-color: #ffffff;
+  border: 3px solid #4d91fc;
+  border-radius: 50%;
+}
+
+.chart-tooltip {
+  position: relative;
+  top: -20px;
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  text-align: left;
+  border: solid 1px rgba(178, 187, 213, 0.5);
+  box-shadow: 0 4px 16px 0 rgba(24, 32, 51, 0.12);
+}
+
+:global(.recharts-tooltip-wrapper-bottom.recharts-tooltip-wrapper-right) .chart-tooltip {
+  transform: translate(-50%, -50%);
+}
+
+:global(.recharts-tooltip-wrapper-bottom.recharts-tooltip-wrapper-left) .chart-tooltip {
+  transform: translate(50%, -50%);
+}
+
+:global(.recharts-tooltip-wrapper-top.recharts-tooltip-wrapper-right) .chart-tooltip {
+  transform: translate(-50%, -50%);
+}
+
+:global(.recharts-tooltip-wrapper-top.recharts-tooltip-wrapper-left) .chart-tooltip {
+  transform: translate(50%, -50%);
+}
+
+.chart-tooltip::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #ffffff;
+  border-left: 1px solid rgba(178, 187, 213, 0.5);
+  border-bottom: 1px solid rgba(178, 187, 213, 0.5);
+  transform: translateX(-50%) rotate(-45deg);
+}
+
+.chart-tooltip-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #182033;
+  margin-bottom: 16px;
+}
+
+.chart-tooltip-channel-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #99a4c2;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.chart-tooltip-channel-value {
+  margin-bottom: 16px;
+}
+
+.chart-tooltip-channel-item {
+  display: flex;
+  align-items: center;
+  color: #222a41;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 9px;
+}
+
+.chart-tooltip-channel-item:last-item {
+  margin-bottom: 0;
+}
+
+.chart-tooltip-channel-thumbnail {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  margin: 0 8px 0 0;
+}
+
+.chart-tooltip-channel-text {
+  color: #707ea7;
+  margin: 0 0 0 4px;
+}
+
+.chart-tooltip-indicator-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #99a4c2;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+
+.chart-tooltil-indicator-value {
+  font-size: 16px;
+  font-weight: 500;
+  color: #182033;
+}

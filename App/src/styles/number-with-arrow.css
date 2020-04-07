@@ -1,0 +1,30 @@
+.inner {
+    display: flex;
+    align-items: center;
+}
+
+.stat {
+    color: #2fcf5f;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 4px;
+    line-height: initial;
+}
+
+.inner[data-negative] .stat {
+    color: #ee2032;
+}
+
+.arrow {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 6px 9px 6px;
+    border-color: transparent transparent #2fcf5f transparent;
+}
+
+.inner[data-negative] .arrow {
+    transform: rotate(180deg);
+    border-color: transparent transparent #ee2032 transparent;
+}

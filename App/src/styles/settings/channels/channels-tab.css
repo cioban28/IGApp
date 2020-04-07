@@ -1,0 +1,141 @@
+.categories-menu {
+    width: 210px;
+    height: stretch;
+    border-radius: 2px;
+    background-color: #e6e8f0;
+    overflow-y: auto;
+}
+
+.category-box {
+    height: 46px;
+    border-radius: 2px;
+    display: flex;
+    padding-left: 15px;
+    align-items: center;
+    font-size: 14px;
+    color: #354052;
+    cursor: pointer;
+}
+
+.category-box[data-selected] {
+    border-radius: 0;
+    background-color: #ffffff;
+}
+
+.channels-menu {
+    width: 265px;
+    height: stretch;
+    border-radius: 2px;
+    background-color: #ffffff;
+}
+
+.channel-box {
+    margin-left: 8px;
+    height: 30px;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #354052;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.channel-box[data-selected] {
+    background-color: #283240;
+    position: relative;
+    color: #ffffff;
+}
+
+.channel-box[data-selected]:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    margin-top: -12px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 0 12px 12px;
+    border-color: transparent transparent transparent #283240;
+}
+
+.inner {
+    margin-left: 43px;
+    color: #707ea7;
+}
+
+.text {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.category {
+    composes: text;
+    margin-bottom: 10px;
+}
+
+.title-text {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.channel {
+    composes: title-text;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.channel-icon {
+    height: 32px;
+    width: 32px;
+    min-height: 32px;
+    min-width: 32px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+.flex-row {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.field-text {
+    composes: text;
+    width: 100px;
+}
+
+.row-icons {
+    width: auto;
+    padding: 0 3px;
+    height: 20px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    width: 10px;
+    height: 10px;
+    margin: 3px;
+    cursor: pointer;
+}
+
+.minus-icon {
+    composes: icon;
+    background: url(/assets/minus-red.svg) center center no-repeat;
+    background-size: contain;
+}
+
+.plus-icon {
+    composes: icon;
+    background: url(/assets/plus-green.svg) center center no-repeat;
+    background-size: contain;
+}

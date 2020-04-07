@@ -1,0 +1,28 @@
+.bar {
+    width: 630px;
+    height: 25px;
+    background-color: #D6D6D6;
+    border-radius: 6px;
+    display: inline-flex;
+    margin-bottom: 20px;
+}
+
+.fill {
+    height: 25px;
+    background-color: #16B200;
+    border-radius: 6px;
+}
+
+.percent {
+    width: 46px;
+    font-weight: 600;
+    display: inline-flex;
+    margin-right: 12px;
+    vertical-align: super;
+    font-size: 18px;
+    margin-left: 6px;
+}
+
+.layout {
+    display: inline-flex;
+}

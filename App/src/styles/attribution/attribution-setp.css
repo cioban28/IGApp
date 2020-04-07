@@ -1,0 +1,158 @@
+.static {
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.title {
+    height: 36px;
+    font-size: 36px;
+    font-weight: 600;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    color: #222a41;
+    margin-bottom: 10px;
+}
+
+.sub-title {
+    height: 24px;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0px;
+    color: #222a41;
+    margin-bottom: 25px;
+}
+
+.step {
+    display: grid;
+    margin-bottom: 40px;
+}
+
+.step-head {
+    display: inline-flex;
+    align-items: center;
+}
+
+.secondary-button {
+    width: fit-content;
+}
+
+.step-number-wrapper {
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.step-number {
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.1px;
+    color: #4d91fc;
+    height: 26px;
+}
+
+.step-content {
+    margin: 27px 0 0 70px;
+}
+
+.content-title {
+    font-size: 18px;
+    font-weight: 500;
+    font-stretch: normal;
+    line-height: 1.43;
+    letter-spacing: 0;
+    color: #222a41;
+}
+
+.second-step-container {
+    width: 345px;
+    margin: 22px 0 15px 0;
+}
+
+.second-step-text {
+    width: 345px;
+    height: 44px;
+    font-size: 11px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 1.82;
+    letter-spacing: 0px;
+    color: #222a41;
+}
+
+.title-wrapper {
+    margin-left: 20px;
+}
+
+.content-sub-title {
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 1.82;
+    letter-spacing: 0;
+    color: #222a41;
+}
+
+.snippet-box {
+    width: fit-content;
+    height: 133px;
+    border-radius: 0.5px;
+    background-color: #e6e8f0;
+    box-shadow: 0 2px 8px 0 #c1cfda;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.snippet {
+    font-size: 12px;
+    font-weight: 600;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.1px;
+    color: #99a4c2;
+    margin: 0;
+}
+
+.snippet-wrapper {
+    background-color: #ffffff;
+    border: solid 1px #c1cfda;
+    overflow: auto;
+    padding: 10px 11px;
+    width: 343px;
+    height: 67px;
+    margin: 0 0 8px 0;
+    box-sizing: border-box;
+}
+
+.buttons {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.button-content {
+    font-size: 12px;
+}
+
+.send-email-button {
+    margin-right: 10px;
+}
+
+.first-step-cont {
+    display: flex;
+    align-items: center;
+}
+
+.or {
+    composes: content-title;
+    margin: 0 50px;
+}

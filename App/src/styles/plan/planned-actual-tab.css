@@ -1,0 +1,77 @@
+.automatic-label {
+    min-width: 37px;
+    max-width: 37px;
+    height: 19px;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 3px 0 rgba(112, 126, 167, 0.2);
+    background-color: #e0dbf7;
+    color: #354052;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500
+}
+
+.channel-name {
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap {
+    margin: 0 25px;
+    padding: 0 6px;
+    overflow-x: auto;
+    position: relative;
+}
+
+.actualText {
+    padding: 0 0 0 14px;
+    box-sizing: border-box;
+}
+
+.cell-item {
+    white-space: pre-wrap;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.channels-select {
+    flex-grow: 1;
+    white-space: pre;
+}
+
+.channels-row {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bottom {
+    margin: 40px 0;
+}
+
+.value-cell:first-child {
+    min-width: 200px;
+}
+
+/* 4n+5 : start from 5th column, repeat every 4 columns */
+.title-cell:nth-child(4n+5) {
+    border-right: 1px solid #ffffff;
+}
+
+.value-cell:nth-child(4n+5) {
+    border-right: 1px solid #ffffff;
+}
+
+tbody .value-cell:nth-child(4n+5) {
+    border-right: 1px solid #b2bbd5;
+}

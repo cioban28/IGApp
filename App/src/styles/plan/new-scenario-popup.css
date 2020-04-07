@@ -1,0 +1,64 @@
+.content {
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.inner {
+    margin: 40px 65px;
+    width: 100%;
+}
+
+.title {
+    font-size: 26px;
+    color: #354052;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.sub-title {
+    font-size: 16px;
+    color: #354052;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 46px;
+}
+
+.boxes {
+    display: inline-flex;
+}
+
+.box {
+    width: 182px;
+    height: 181px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    border: solid 2px rgba(0, 0, 0, 0.4);
+    margin: 0 12px;
+    cursor: pointer;
+}
+
+.scratch {
+    composes: box;
+    background: url(/assets/play-button.svg) center 10% no-repeat;
+    background-size: 95px 85px;
+}
+
+.committed {
+    composes: box;
+    background: url(/assets/continuous.svg) center 10% no-repeat;
+    background-size: 95px 85px;
+}
+
+.box-text {
+    font-size: 16px;
+    text-align: center;
+    color: #53626b;
+    margin: 110px 17px 0;
+    white-space: normal;
+}

@@ -1,0 +1,9 @@
+.a {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 600;
+  color: #24b10e;
+  border-bottom: 1px solid;
+  text-decoration: none;
+  cursor: pointer;
+}

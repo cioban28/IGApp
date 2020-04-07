@@ -1,0 +1,19 @@
+.plus-box {
+    height: 270px;
+    width: 260px;
+    user-select: none;
+    flex-shrink: 0;
+    flex-grow: 0;
+    margin: 15px 30px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+}
+
+.plus {
+    top: 87px;
+    position: relative;
+    cursor: pointer;
+    font-size: 72px;
+    display: inline-block;
+}

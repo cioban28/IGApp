@@ -1,0 +1,8 @@
+.tooltip-class {
+    pointer-events: auto !important;
+}
+
+.tooltip-class:hover {
+    visibility: visible !important;
+    opacity: 1 !important;
+}

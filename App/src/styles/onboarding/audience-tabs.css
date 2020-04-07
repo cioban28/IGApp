@@ -1,0 +1,88 @@
+.box {
+  width: 100%;
+}
+
+.tabs {
+  height: 72px;
+  display: flex;
+  position: relative;
+  overflow: auto;
+  max-width: 100%;
+}
+
+.tabs::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  background: #e7e9ed;
+  z-index: 0;
+}
+
+.tab {
+  height: 72px;
+  padding: 0 24px;
+  font-size: 18px;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  display: flex;
+  cursor: pointer;
+  z-index: 1;
+  user-select: none;
+  flex-grow: 0;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  padding-bottom: 4px;
+}
+
+.tab:hover {
+  background-color: #f2f9fc;
+}
+
+.tab-selected {
+  composes: tab;
+  cursor: default;
+}
+
+.tab-selected::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  background: #4b515e;
+}
+
+.add-tab {
+  composes: tab;
+
+  color: #1165a3;
+}
+
+.content-box {
+  margin: 24px 0;
+}
+
+.remove-tab {
+  width: 14px;
+  height: 14px;
+  background-size: 60% 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/remove.svg");
+  cursor: pointer;
+  margin-left: 20px;
+  border-radius: 20px;
+  position: absolute;
+  right: 5px;
+}
+
+.remove-tab:hover {
+  background-color: #E6E8F0;
+}

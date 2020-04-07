@@ -1,0 +1,73 @@
+.container {
+    width: calc((100% - 80px) / 3);
+    min-height: 257px;
+    box-sizing: border-box;
+}
+
+.container:last-child {
+    margin-right: 0;
+}
+
+.row {
+    display: flex;
+    margin: 10px 0;
+}
+
+.left {
+    width: 50%;
+    justify-content: flex-start;
+    display: flex;
+}
+
+.right {
+    width: 50%;
+    justify-content: flex-end;
+}
+
+.title {
+    font-weight: bold;
+    margin: 12px 0;
+}
+
+.x-title {
+    composes: left;
+    composes: title;
+    display: block;
+    text-transform: capitalize;
+}
+
+.score-title {
+    composes: right;
+    composes: title;
+}
+
+.text {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis;
+    /* autoprefixer: off */
+    -webkit-box-orient: vertical;
+    /* autoprefixer: on */
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.bar {
+    height: 20px;
+    width: 165px;
+    background-color: #25C122;
+}
+
+.channel-icon {
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-right: 10px;
+    min-width: 20px;
+    min-height: 20px;
+    align-self: center;
+    background-color: white;
+}

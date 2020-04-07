@@ -1,0 +1,143 @@
+.col-left {
+  width: 45%;
+}
+
+.col-right {
+  width: 55%;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.impact-pie-chart {
+  position: relative;
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 50%;
+  height: 332px;
+}
+
+.impact-pie-chart-total {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-weight: 500;
+  /*
+  font-size needs to be responsive so it doesn't
+  overflow on top of the pie chart,
+  1.9vw will be able to handle up to 9 digits value
+  */
+  font-size: 1.9vw;
+  transform: translate(-50%, -50%);
+}
+
+.impact-chart-legend-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 50%;
+}
+
+.impact-chart-legend {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 24px 0;
+  padding: 0 0 0 24px;
+  max-height: 330px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.impact-chart-legend-item {
+  display: flex;
+  align-items: center;
+  margin: 0 0 12px 0;
+}
+
+.impact-chart-legend-item-thumbnail {
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  margin: 0 6px 0 0;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+}
+
+.impact-chart-legend-item-label {
+  align-items: center;
+  font-size: 14px;
+  color: #222a41;
+  text-transform: capitalize;
+}
+
+.impact-chart-legend-item-label span {
+  color: #707ea7;
+}
+
+.impact-chart-legend-item-label.active {
+  font-weight: 600;
+}
+
+.impact-chart-tooltip {
+  position: relative;
+  top: -20px;
+  padding: 16px 32px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  text-align: center;
+  border: solid 1px rgba(178, 187, 213, 0.5);
+  box-shadow: 0 4px 16px 0 rgba(24, 32, 51, 0.12);
+}
+
+:global(.recharts-tooltip-wrapper-bottom.recharts-tooltip-wrapper-right) .impact-chart-tooltip {
+  transform: translate(-50%, -100%);
+}
+
+:global(.recharts-tooltip-wrapper-bottom.recharts-tooltip-wrapper-left) .impact-chart-tooltip {
+  transform: translate(50%, -100%);
+}
+
+:global(.recharts-tooltip-wrapper-top.recharts-tooltip-wrapper-right) .impact-chart-tooltip {
+  transform: translate(-50%, 0);
+}
+
+:global(.recharts-tooltip-wrapper-top.recharts-tooltip-wrapper-left) .impact-chart-tooltip {
+  transform: translate(50%, 0);
+}
+
+.impact-chart-tooltip::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #ffffff;
+  border-left: 1px solid rgba(178, 187, 213, 0.5);
+  border-bottom: 1px solid rgba(178, 187, 213, 0.5);
+  transform: translateX(-50%) rotate(-45deg);
+}
+
+.impact-chart-tooltip-label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #707ea7;
+  margin: 0 0 4px 0;
+  text-transform: capitalize;
+}
+
+.impact-chart-tooltip-value {
+  font-size: 24px;
+  font-weight: 500;
+  color: #222a41;
+}
+
+.impact-chart-tooltip-value span {
+  color: #707ea7;
+  margin: 0 0 0 7px;
+}

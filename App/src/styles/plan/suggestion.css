@@ -1,0 +1,113 @@
+.item {
+    width: 170px;
+    height: 140px;
+    padding: 15px;
+    margin: 0 10px;
+}
+
+.item-inner {
+    composes: item;
+    border-radius: 2px;
+    background-color: #ffffff;
+    border: solid 2px #dfe2e5;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    composes: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #646973;
+    height: 17px;
+}
+
+.channel-icon {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 38px;
+    height: 37px;
+}
+
+.budgets {
+    composes: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: #ababab;
+    margin-top: 15px;
+    white-space: pre;
+}
+
+.current {
+    color: #c62b36;
+}
+
+.suggested {
+    color: #33cc33;
+}
+
+.actions {
+    margin-top: 13px;
+    composes: center;
+}
+
+.action-button {
+    cursor: pointer;
+    width: 25px;
+    height: 22px;
+}
+
+.decline {
+    composes: action-button;
+    background: url('/assets/cancel-music.svg') center center no-repeat;
+    background-size: contain;
+}
+
+.approve {
+    composes: action-button;
+    background: url('/assets/check-mark.svg') center center no-repeat;
+    background-size: contain;
+    margin-left: 41px;
+}
+
+.icon-shell {
+    composes: item;
+    composes: center;
+    align-items: center;
+}
+
+.action-success {
+    width: 77px;
+    height: 77px;
+    border: solid 5px #979797;
+    border-radius: 50%;
+}
+
+.action-success[data-action="approve"] {
+    background: url('/assets/check-mark.svg') center center no-repeat;
+    background-size: 35px 31px;
+}
+
+.action-success[data-action="decline"] {
+    background: url('/assets/cancel-music.svg') center center no-repeat;
+    background-size: 35px 31px;
+}
+
+.forecast-button {
+    background: white url(/assets/graph.svg) center center no-repeat;
+    background-size: 14px auto;
+    width: 20px;
+    height: 20px;
+    box-shadow: inset 0 0 0 2px #2ea1f8;
+    border-radius: 4px;
+    cursor: pointer;
+    position: absolute;
+    left: 94px;
+    top: -8px;
+}

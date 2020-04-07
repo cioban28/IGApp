@@ -1,0 +1,112 @@
+.wrap {
+    width: 850px;
+    height: 465px;
+    background-color: #ffffff;
+    border: solid 1px #dfe2e5;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #354052;
+}
+
+.subtitle-row {
+    margin-top: 44px;
+    position: relative;
+    display: flex;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #354052;
+    margin: auto;
+}
+
+.loading-bar {
+    width: 420px;
+    height: 7px;
+    background-color: #e6e6e6;
+    margin: 10px auto 16px;
+}
+
+.loading-bar-fill {
+    height: 7px;
+    background-color: #34cd34;
+    transition: 0.4s linear;
+    transition-property: width, background-color;
+}
+
+.step-row {
+    width: 420px;
+    margin: 5px auto;
+    display: flex;
+}
+
+.step-row:last-child {
+    margin-bottom: 90px;
+}
+
+.step-text {
+    font-size: 14px;
+    color: #354052;
+}
+
+.step-check {
+    width: 15px;
+    height: 15px;
+    background: url(/assets/check-mark-clean.svg) center center no-repeat;
+    background-size: contain;
+    margin-left: auto;
+    align-self: center;
+}
+
+.small-gif {
+    background: url(/assets/Interwind.gif) center center no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 225px;
+    top: -15px;
+}
+
+@keyframes ld-spin-fast {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+        animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    50% {
+        -webkit-transform: rotate(900deg);
+        transform: rotate(900deg);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    100% {
+        -webkit-transform: rotate(1800deg);
+        transform: rotate(1800deg);
+    }
+}
+@-webkit-keyframes ld-spin-fast {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+        animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    50% {
+        -webkit-transform: rotate(900deg);
+        transform: rotate(900deg);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    100% {
+        -webkit-transform: rotate(1800deg);
+        transform: rotate(1800deg);
+    }
+}
+.ld-spin-fast {
+    -webkit-animation: ld-spin-fast 3.5s infinite;
+    animation: ld-spin-fast 3.5s infinite;
+    display: block;
+    margin: 50px auto;
+}

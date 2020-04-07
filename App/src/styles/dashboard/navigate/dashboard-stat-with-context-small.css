@@ -1,0 +1,29 @@
+.outer {
+    display: inline-block;
+}
+
+.stat-value {
+    font-size: 36px;
+    font-weight: 600;
+    color: #222a41;
+    line-height: 28px;
+    display: flex;
+}
+
+.grey-text {
+    font-weight: 600;
+    color: #99a4c2;
+}
+
+.stat-sign {
+    composes: grey-text;
+    font-size: 20px;
+    line-height: 16px;
+    margin: 0 8px 0 4px;
+}
+
+.stat-name {
+    composes: grey-text;
+    font-size: 14px;
+    margin-top: 7px;
+}

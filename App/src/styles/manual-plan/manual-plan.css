@@ -1,0 +1,20 @@
+.title {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    text-align: center;
+    color: #222a41;
+}
+
+.sub-title {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+    text-align: center;
+    color: #222a41;
+    margin: 10px 0;
+}
+
+.inner {
+    margin: 40px 0;
+}

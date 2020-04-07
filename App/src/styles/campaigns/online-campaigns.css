@@ -1,0 +1,42 @@
+@import "../global/mixins.css";
+
+.icon {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-left: 15px;
+}
+
+.channel-icon {
+    composes: icon;
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
+    align-self: center;
+    background-color: white;
+}
+
+@mixin icon-nodpi status:On Hold, /assets/on-hold;
+@mixin icon-nodpi status:In Progress, /assets/in-progress;
+
+.status-icon {
+    composes: icon;
+    width: 15px;
+    height: 15px;
+    min-width: 15px;
+    min-height: 15px;
+}
+
+.metric-header {
+    overflow: visible!important;
+}
+
+.metric-edit {
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+    align-self: center;
+    margin-left: 16px;
+    cursor: pointer;
+}

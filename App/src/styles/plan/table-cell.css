@@ -1,0 +1,62 @@
+@import "../global/mixins.css";
+
+.secondary-value {
+    font-size: 10px;
+    font-weight: 500;
+    color: #b2bbd5;
+    margin-top: 6px;
+    position: absolute;
+}
+
+.secondary-value[data-in-edit] {
+    margin-left: 2px;
+}
+
+.cell-item {
+    align-items: center;
+    display: inline-flex;
+}
+
+.cell-item[data-in-edit] {
+    margin-left: -8px;
+}
+
+.icon {
+    width: 18px;
+    height: 18px;
+    background-size: contain;
+    cursor: pointer;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-left: 5px;
+}
+
+.buttons {
+    display: flex;
+    margin-left: 3px;
+}
+
+.inner-buttons {
+    display: flex;
+}
+
+.edit-cell {
+    width: 74px;
+    border-radius: 3px;
+    box-shadow: 0 0 3px 0 #e6e8f0;
+    border: solid 1px #e6e8f0;
+    color: #4d91fc;;
+    padding: 10px 0 7px 8px;
+    font-size: inherit;
+    font-weight: inherit;
+    letter-spacing: 0.1px;
+    box-sizing: border-box;
+}
+
+@mixin icon-nodpi plan:none, /assets/plan_icons/clear-state;
+@mixin icon-nodpi plan:like, /assets/plan_icons/like;
+@mixin icon-nodpi plan:lock, /assets/plan_icons/lockChannel;
+@mixin icon-nodpi plan:acceptSuggestion , /assets/plan_icons/redo;
+@mixin icon-nodpi plan:edit , /assets/plan_icons/edit-per-cell;
+@mixin icon-nodpi plan:approveEdit , /assets/plan_icons/accept;
+@mixin icon-nodpi plan:declineEdit , /assets/plan_icons/decline;

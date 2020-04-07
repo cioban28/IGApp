@@ -1,0 +1,260 @@
+.inner {
+    background: white;
+    position: relative;
+    width: 100%;
+    padding-left: 40px;
+    height: 554px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.floating .menu-items {
+    height: 230px;
+}
+
+.menu {
+    min-width: 196px;
+    height: 100%;
+    padding-top: 40px;
+    box-sizing: border-box;
+}
+
+.menu-title {
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: capitalize;
+    white-space: nowrap;
+    letter-spacing: 0.1px;
+    color: #222a41;
+    margin-bottom: 44px;
+}
+
+.colored-circle {
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.objective-icon {
+    margin-left: 3px;
+}
+
+.menu-items {
+    overflow-y: auto;
+    height: 370px;
+    display: grid;
+    transform: translateZ(0);
+}
+
+.menu-item {
+    margin-bottom: 18px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.chart {
+    position: relative;
+    padding-left: 40px;
+    width: 100%;
+    min-width: 0;
+    flex-shrink: 1;
+    overflow: hidden;
+}
+
+.chartScroller {
+    width: calc(100% - 60px);
+    padding-top: 120px;
+    margin-left: 60px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    transform: translateZ(0);
+}
+
+.legend {
+    position: absolute;
+    width: 330px;
+    top: 100px;
+    right: 0;
+}
+
+.custom-tooltip {
+    padding: 14px;
+    width: fit-content;
+    min-width: 126px;
+    height: auto;
+    background-color: #222a41;
+    box-shadow: 0 4px 8px 0 rgba(153, 164, 194, 0.16);
+    border-radius: 2px;
+    position: relative;
+}
+
+:global(.recharts-tooltip-wrapper-right) .custom-tooltip {
+    transform: translateY(calc(-100% - 13px)) translateX(-50%);
+}
+
+:global(.recharts-tooltip-wrapper-right) .custom-tooltip.first-item-tooltip {
+    transform: translateY(-50%) translateX(13px);
+}
+
+:global(.recharts-tooltip-wrapper-left) .custom-tooltip {
+    transform: translateY(calc(-100% - 13px)) translateX(50%);
+}
+
+:global(.recharts-tooltip-wrapper-left) .custom-tooltip.last-item-tooltip {
+    transform: translateY(-50%) translateX(-13px);
+}
+
+.custom-tooltip:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    width: 0;
+    height: 0;
+    border-top: solid 5px #222a41;
+    border-left: solid 5px transparent;
+    border-right: solid 5px transparent;
+}
+
+:global(.recharts-tooltip-wrapper-right) .custom-tooltip.first-item-tooltip:after {
+    top: 50%;
+    left: auto;
+    right: 100%;
+    margin: -5px 0 0 0;
+    border-top: solid 5px transparent;
+    border-bottom: solid 5px transparent;
+    border-right: solid 5px #222a41;
+    border-left: none;
+}
+
+:global(.recharts-tooltip-wrapper-left) .custom-tooltip.last-item-tooltip:after {
+    top: 50%;
+    left: 100%;
+    right: auto;
+    margin: -5px 0 0 0;
+    border-top: solid 5px transparent;
+    border-bottom: solid 5px transparent;
+    border-left: solid 5px #222a41;
+    border-right: none;
+}
+
+.custom-tooltip-title {
+    font-weight: 600;
+    color: #99a4c2;
+}
+
+.custom-tooltip-indicator {
+    composes: custom-tooltip-title;
+    font-size: 12px;
+    text-align: left;
+    margin-bottom: 2px;
+}
+
+.custom-tooltip-value {
+    font-size: 12px;
+    font-weight: 600;
+    color: #84b3ff;
+    margin-right: 27px;
+}
+
+.custom-tooltip-values {
+    display: inline-flex;
+    margin-bottom: 12px;
+}
+
+.custom-tooltip-header {
+    composes: custom-tooltip-title;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
+.custom-tooltip-objective {
+    composes: custom-tooltip-indicator;
+    text-align: left;
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-tooltip-progress {
+    composes: custom-tooltip-objective;
+    flex-direction: row;
+    align-items: center;
+}
+
+.custom-tick {
+    font-size: 11px;
+    fill: #99a4c2;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    text-transform: uppercase;
+}
+
+.objective-dot {
+    background: url(/assets/objective-dot.svg) center center no-repeat;
+    width: 23px;
+    height: 23px;
+    object-fit: contain;
+}
+
+.legend-icon {
+    width: 24px;
+    border-radius: 1px;
+    border-top: 2px #707ea7;
+    border-style: solid;
+    max-height: 0;
+    align-self: center;
+    margin-left: 35px;
+}
+
+.legend-icon-dashed {
+    composes: legend-icon;
+    border-style: dashed;
+}
+
+.legend-text {
+    margin-left: 7px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #707ea7;
+}
+
+/*
+    recharts does not allow to make fixed axis
+    so we use second chart, make it be in fixed position
+    and hide all visual data except y-axis
+*/
+
+.fixedChartOverlay {
+    position: absolute!important;
+    width: 100%!important;
+    top: 120px;
+    left: 30px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.fixedChartOverlay g {
+    display: none;
+}
+
+.tooltip-legend {
+    width: 20px;
+    border-style: solid;
+    border-width: 0 0 3px 0;
+    align-self: center;
+    margin-right: 4px;
+}
+
+.value-class {
+    display: inline-flex;
+}
+
+.fixedChartOverlay :global(.yAxis),
+.fixedChartOverlay :global(.yAxis) g {
+    display: initial;
+}

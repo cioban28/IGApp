@@ -1,0 +1,274 @@
+.static {
+  margin-top: 0;
+  position: relative;
+}
+
+.head {
+  height: 114px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: calc(100% - 80px);
+  padding: 0 40px;
+}
+
+.column {
+  width: 33.33%;
+  display: flex;
+}
+
+.head-title {
+  text-transform: capitalize;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  color: #222a41;
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-grow: 0;
+  align-self: center;
+}
+
+.head-plan {
+  height: 100%;
+ /** padding: 0 32px 0 30px;
+  margin: 0 5px;**/
+  margin-left: auto;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  white-space: nowrap;
+}
+
+.wrap {
+  padding-top: 110px;
+}
+
+.pageInner {
+  overflow: visible!important;
+  padding: 120px 40px 40px 40px;
+}
+
+.content {
+  margin: 0 !important;
+  padding: 0 !important;
+  background: #f5f6fb !important;
+  position: relative;
+}
+
+.title {
+  height: 60px;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 31px;
+}
+
+.title-main {
+  display: flex;
+  align-items: flex-end;
+}
+
+.title-text {
+  flex-grow: 0;
+  flex-shrink: 0;
+  color: #646973;
+  font-size: 20px;
+  line-height: 34px;
+  white-space: pre;
+}
+
+.title-price {
+  color: #273142;
+  font-size: 26px;
+  font-weight: 600;
+  padding-left: 41px;
+  margin-right: auto;
+
+  background: url(/assets/plan_icons/arrow.svg) 12px 60% no-repeat;
+  background-size: 17px auto;
+}
+
+.title-buttons {
+  /*margin-left: auto;*/
+  flex-grow: 1;
+  flex-shrink: 0;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.inner-box {
+  margin: 31px 0;
+  /*padding: 0 31px;*/
+  /*min-height: 300px;*/
+}
+
+.table {
+  padding: 15px;
+}
+
+@media (max-width: 830px) {
+  .title {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .title-main {
+    margin: 20px 0;
+    display: block;
+  }
+
+  .title-text,
+  .title-price {
+    display: inline;
+  }
+}
+
+@media (max-width: 1130px) {
+  .head {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .head-tabs {
+    margin: 0;
+  }
+
+  .head-title {
+    margin-top: 20px;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 780px) {
+  .head-tabs {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+@media (max-width: 560px) {
+  .head-tabs {
+    height: 56px;
+  }
+
+  .head-title {
+    margin: 10px 0;
+  }
+}
+
+.error {
+  padding-right: 15px;
+  color: red;
+  font-size: 13px;
+  text-align: left;
+}
+
+.server-down {
+  color: red;
+  font-size: 20px;
+}
+
+.budget-left-to-plan-ok {
+  background: url(/assets/success_bltp.svg) center center no-repeat;
+  background-size: contain;
+  height: 24px;
+  width:24px;
+}
+
+.plan-circle {
+  background: #FDA329;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  left: 117px;
+  top: -10px;
+  position: absolute;
+  border: solid 2px white;
+}
+
+.title-toggle {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+}
+
+.dropmenu {
+  left: 15px !important;
+  padding: 8px !important;
+  min-height: inherit !important;
+  top: 45px !important;
+  text-transform: capitalize;
+}
+
+.dropmenu-edit {
+  width: 110px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  box-shadow: 0 6px 6px 0 rgba(27, 35, 56, 0.04);
+  composes: dropmenu;
+}
+
+.button-triangle {
+  border: .25rem solid transparent;
+  border-top-color: currentColor;
+  color: #2ea1f8;
+  position: relative;
+  top: 3px;
+  left: 13px;
+  height: fit-content;
+}
+
+.dropmenu-item {
+  padding-left: 10px;
+  display: -webkit-box;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+  height: 32px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  color: #707ea7;
+}
+
+.dropmenu-item:hover, .dropmenu-item[data-selected] {
+  border-radius: 3px;
+  background-color: #f5f6fa;
+  font-weight: 600;
+  color: #4d91fc;
+}
+
+.dropButton {
+  padding: 0 11px 0 0;
+}
+
+.budget-change-box {
+  padding: 5px 12px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.right {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  -webkit-box-pack: end;
+}
+
+.budget-change-field {
+  flex-grow: 1;
+  flex-shrink: 0;
+}

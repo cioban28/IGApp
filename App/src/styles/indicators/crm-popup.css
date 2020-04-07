@@ -1,0 +1,108 @@
+.inner {
+    padding: 0 30px;
+}
+
+.box {
+    cursor: pointer;
+    width: 100%;
+    height: 65px;
+    border-radius: 5px;
+    border: solid 2px #dfdfdf;
+}
+
+.salesforce {
+    composes: box;
+    background: url(/assets/salesforce.png) center center no-repeat;
+    background-size: contain;
+}
+
+.hubspot {
+    composes: box;
+    background: url(/assets/hubspot.png) center center no-repeat;
+    background-size: contain;
+}
+
+.google-analytics {
+    composes: box;
+    background: url(/assets/google-analytics-logo.jpg) center center no-repeat;
+    background-size: contain;
+}
+
+.stripe {
+    composes: box;
+    background: url(/assets/stripe.png) center center no-repeat;
+    background-size: contain;
+}
+
+.google-sheets {
+    composes: box;
+    background: url(/assets/google-sheets.png) center center no-repeat;
+    background-size: contain;
+}
+
+.linkedin {
+    composes: box;
+    background: url(/assets/linkedin-logo.png) center center no-repeat;
+    background-size: contain;
+}
+
+.adwords {
+    composes: box;
+    background: url(/assets/words.png) center center no-repeat;
+    background-size: contain;
+}
+
+.facebookads {
+    composes: box;
+    background: url(/assets/facebook-ads.svg) center center no-repeat;
+    background-size: contain;
+}
+
+.bingads {
+    composes: box;
+    background: url(/assets/platform-icons/bing.png) center center no-repeat;
+    background-size: contain;
+}
+
+.linkedinads {
+    composes: box;
+    background: url(/assets/linkedin-ads.png) center center no-repeat;
+    background-size: contain;
+}
+
+.twitterads {
+    composes: box;
+    background: url(/assets/twitter-ads.png) center center no-repeat;
+    background-size: contain;
+}
+
+.quoraads {
+    composes: box;
+    background: url(/assets/quora-ads.png) center center no-repeat;
+    background-size: contain;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.row {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.close {
+    position: relative;
+    bottom: 31px;
+    left: 278px;
+    width: 15px;
+    height: 15px;
+    background: url(/assets/plan_icons/close.svg) center center no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}

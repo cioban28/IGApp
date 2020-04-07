@@ -1,0 +1,35 @@
+.add-item {
+    display: inline-flex;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 3px solid #979797 ;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #646973 ;
+}
+
+.advanced {
+    display: inline-flex;
+    margin-left: -81px;
+    margin-top: 7px;
+    color: #646973;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.budget {
+    font-size: 20px;
+    margin-left: 65px;
+    margin-bottom: 20px;
+    display: inline-flex;
+    font-weight: 600;
+    white-space: pre-wrap;
+}
+
+.budget-text {
+    color: #646973;
+}
+
+.budget-number {
+    color: #16B200;
+}

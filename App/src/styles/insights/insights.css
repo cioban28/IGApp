@@ -1,0 +1,54 @@
+.inner {
+    padding: 42px 38px;
+}
+
+.popup-content {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.popup-inner {
+    overflow: initial !important;
+}
+
+.channel-icons {
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    box-shadow: -2px 4px 4px 0 rgba(151, 151, 151, 0.5);
+}
+
+.icon {
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+}
+
+.upper-icon {
+    composes: icon;
+    left: 7px;
+    top: 8px;
+    z-index: 2;
+}
+
+.lower-icon {
+    composes: icon;
+    left: 17px;
+    top: 18px;
+    z-index: 1;
+}
+
+.close-popup {
+    background: url(/assets/x-wight.svg) center center no-repeat;
+    background-size: contain;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 230px;
+    top: 1px;
+    cursor: pointer;
+}

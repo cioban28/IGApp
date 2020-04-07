@@ -1,0 +1,74 @@
+{
+    "_id": {
+        "$oid": "5b9fb31bfbdbf7643e2c5740"
+    },
+    "UID": "auth0|5b9fb26a72d4bb47f9a86e07",
+    "startTime": "Tue Apr 25 2017 09:39:42 GMT+0000 (UTC)",
+    "onboarding": false,
+    "competitorsWebsites": [
+        "http://www.zoho.com/CRM",
+        "http://www.freshworks.com",
+        "https://www.pipedrive.com/"
+    ],
+    "teamMembers": [
+        {
+            "lastName": "Benioff",
+            "firstName": "Marc ",
+            "email": "static@infinigrow.com",
+            "userId": "auth0|5b9fb26a72d4bb47f9a86e07",
+            "name": "Marc Benioff",
+            "pictureUrl": "https://specials-images.forbesimg.com/imageserve/59d7cc144bbe6f37dda01db7/416x416.jpg?background=000000&cropX1=749&cropX2=2926&cropY1=188&cropY2=2364",
+            "role": "CMO"
+        },
+        {
+            "pictureUrl": null,
+            "userId": "auth0|5adf37105fb3bc1b6d7baaca",
+            "isSpecificChannels": true,
+            "specificChannels": [
+                "advertising_searchMarketing_SEM_bing",
+                "advertising_searchMarketing_SEM_googleAdwords",
+                "advertising_searchMarketing_SEM_onlineDirectories",
+                "advertising_searchMarketing_SEM_other",
+                "advertising_socialAds_facebookAdvertising",
+                "advertising_socialAds_twitterAdvertising",
+                "advertising_socialAds_linkedinAdvertising",
+                "advertising_socialAds_instagramAdvertising",
+                "advertising_socialAds_pinterestAdvertising",
+                "advertising_socialAds_youtubeAdvertising",
+                "advertising_socialAds_GooglePlusAdvertising"
+            ],
+            "isAdmin": false,
+            "role": "PPC Manager",
+            "email": "JoeDoe@testtt.com",
+            "name": "Joe Doe"
+        }
+    ],
+    "__v": 0,
+    "companyWebsite": "salesforce.com",
+    "companyName": "Salesforce",
+    "teamSize": 2,
+    "reasonForUse": "end to end planning",
+    "freePlan": false,
+    "pages": {
+        "campaigns": true,
+        "attribution": true,
+        "plan": true,
+        "dashboard": true,
+        "insights": true,
+        "users": true
+    },
+    "permissions": {
+        "attribution": true,
+        "plannerAI": true,
+        "marketingVsSales": true,
+        "CRMLeadSource": true
+    },
+    "dontShowSteps": true,
+    "steps": {
+        "campaign": true,
+        "plannedVsActual": true,
+        "plan": true,
+        "campaignIdea": true
+    },
+    "isPaid": true
+}

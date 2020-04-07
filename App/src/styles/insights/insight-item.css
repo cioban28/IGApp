@@ -1,0 +1,146 @@
+.frame {
+    width: 825px;
+    height: 217px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    border: solid 2px #e3e6f4;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.left-side {
+    padding: 15px 20px;
+    position: relative;
+    width: 576px;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: bold;
+    border-bottom: solid 1px #f2f2f2;;
+    padding-bottom: 14px;
+}
+
+.text {
+    margin: 15px 0;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.right-side {
+     width: 235px;
+     background-color: #0099cc;
+     border-left: solid 2px #e3e6f4;
+     padding: 15px;
+     position: relative;
+ }
+
+.right-side[data-green="true"] {
+    background-color: #2fb023;
+}
+
+.end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.invest-box {
+    width: 70px;
+    border-radius: 5px;
+    border: solid 2px #ffffff;
+    color: #ffffff;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.summary-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.channel-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    box-shadow: -2px 4px 4px 0 rgba(151, 151, 151, 0.5);
+    border-radius: 50%;
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.summary-title {
+    font-size: 46px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-left: 20px;
+}
+
+.summary-text {
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    position: absolute;
+    top: 160px;
+    left: 20px;
+}
+
+.button {
+    width: 100px;
+    height: 38px;
+    border-radius: 5px;
+    background-color: #ffffff !important;
+    align-items: center;
+}
+
+.approve-button {
+    composes: button;
+    border: solid 2px #2fae23;
+    color: #2fae23;
+}
+
+.decline-button {
+    composes: button;
+    border: solid 2px #c62b36;
+    color: #c62b36;
+    margin-left: 20px;
+}
+
+.balancer-button {
+    composes: button;
+    border: solid 2px #259af2;
+    color: #259af2;
+    margin-left: 20px;
+    width: 150px;
+}
+
+.icon {
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+}
+
+.approve-icon {
+    composes: icon;
+    background: url(/assets/check-mark.svg) center center no-repeat;
+    background-size: contain;
+}
+
+.decline-icon {
+    composes: icon;
+    background: url(/assets/cancel-music.svg) center center no-repeat;
+    background-size: contain;
+}
+
+.balancer-icon {
+    composes: icon;
+    background: url(/assets/yin-yang.svg) center center no-repeat;
+    background-size: contain;
+}

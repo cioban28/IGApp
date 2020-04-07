@@ -1,0 +1,51 @@
+.text {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    color: #99a4c2;
+}
+
+.upper-text {
+    composes: text;
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+.dollar {
+    composes: text;
+    align-self: center;
+    font-size: 16px;
+    margin-left: 2px;
+}
+
+.bottom-text {
+    composes: text;
+    margin-top: 5px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.number {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    color: #222a41;
+}
+
+.line {
+    width: 216px;
+    height: 6px;
+    border-radius: 4px;
+    background-color: #e6e8f0;
+    margin-top: 2px;
+}
+
+.line-fill {
+    width: 136px;
+    height: 6px;
+    border-radius: 4px;
+    background-color: #4d91fc;
+}

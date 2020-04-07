@@ -1,0 +1,79 @@
+.inner {
+    padding: 15px 25px;
+    display: inline-block;
+    position: relative;
+}
+
+.bottom {
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: 158px;
+}
+
+.title {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    fill: #99a4c2;
+}
+
+.current {
+    font-size: 24px;
+    font-weight: 600;
+    fill: #222a41;
+    letter-spacing: 0.1px;
+}
+
+.current-mark {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    fill: #99a4c2;
+    text-anchor: middle;
+}
+
+.target {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    fill: #b2bbd5;
+}
+
+.time-left {
+    margin-top: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    text-align: right;
+    color: #99a4c2;
+}
+
+.circle-background {
+    fill: none;
+    stroke: #e6e8f0;
+}
+
+.circle-progress {
+    /*
+    use this properties for round end
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    */
+    fill: none;
+}
+
+.progress {
+    width: 200px;
+    height: 6px;
+    border-radius: 4px;
+    background-color: #e6e8f0;
+    margin: 16px auto 0;
+}
+
+.progress-fill {
+    width: 136px;
+    height: 6px;
+    border-radius: 4px;
+    background-image: linear-gradient(to right, #e6e8f0, #2fcf5f);
+}

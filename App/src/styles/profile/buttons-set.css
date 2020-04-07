@@ -1,0 +1,17 @@
+.help-wrap {
+    position: relative;
+}
+
+.validation-error {
+    background: url(/assets/attention.svg) center center no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    align-self: center;
+}
+
+.ig-grid-row {
+    display: flex;
+    margin: 8px 0;
+    flex-wrap: wrap;
+}

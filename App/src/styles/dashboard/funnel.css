@@ -1,0 +1,16 @@
+.inner {
+    display: inline-flex;
+    justify-content: center;
+}
+
+.item {
+    display: inline-flex;
+}
+
+.line {
+    height: 3px;
+    width: calc(100% - 24px);
+    background-color: #919191;
+    position: absolute;
+    margin-top: 259px;
+}

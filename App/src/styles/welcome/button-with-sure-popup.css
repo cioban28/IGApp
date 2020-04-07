@@ -1,0 +1,73 @@
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.popup {
+    left: 103px;
+    border: none;
+    top: -1px;
+    cursor: pointer;
+}
+
+.tooltip {
+    position: absolute;
+    width: 76px;
+    background: linear-gradient(to top, #24b00d 0%, #27b210 100%);
+    border: 1px solid #dbdce3;
+    border-radius: 4px;
+    box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.2);
+    padding: 3px 9px;
+    z-index: 2;
+    text-transform: none;
+    white-space: pre-wrap;
+    line-height: 140%;
+    height: 34px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    color: white;
+}
+
+.tooltip::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: -7px;
+
+    z-index: 1;
+
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 6px 6px 0;
+    border-color: transparent #dbdce3 transparent transparent;
+}
+
+.tooltip::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: -6px;
+
+    z-index: 2;
+
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 6px 6px 0;
+    border-color: transparent #24b00d transparent transparent;
+}
+
+.button {
+    height: 32px;
+    width: 90%;
+    overflow: hidden;
+}

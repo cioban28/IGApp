@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>InfiniGrow - Engagement Calculator BETA</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600'>
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="vendor/device-mockups/device-mockups.min.css">
+
+    <!-- Theme CSS -->
+    <link href="css/new-age.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+            </button>
+            <img src="img/white%20logo.png" height="45" width="60" style="padding-top: 8px">
+            <a class="navbar-brand page-scroll" href="#page-top" style="font-size: 28px; padding-top: 15px">InfiniGrow - Engagement Calculator BETA</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="header-content">
+
+
+                    <div class="cont_centrar">
+
+                        <form action="">
+                            <ul class="tab-group">
+                                <li class="tab active"><a href="#fb"  id="iidd">Facebook</a></li>
+                                <li class="tab"><a href="#in">LinkedIn</a></li>
+                                <li class="tab"><a href="#twtr">Twitter</a></li>
+                                <li class="tab"><a href="#inst">Instagram</a></li>
+                                <li class="tab"><a href="#pin">Pinterest</a></li>
+                                <li class="tab"><a href="#gp">Google+</a></li>
+                                <li class="tab"><a href="#utu">Youtube</a></li>
+
+                            </ul>
+                            <div class="tab-content">
+
+                                <div id="fb">
+                                    <h1 style="color:black; margin-left: 30%; margin-top: -4%">Average per Post</h1>
+
+                                    <form action="/" method="post">
+                                        <div class="field-wrap">
+                                            <input id="fblike" type="text" required autocomplete="off" class="input_form_sign d_block active_inp" placeholder=" Likes (Reactions)"  />
+                                        </div>
+
+                                        <div class="field-wrap">
+                                            <input id="fbclik" type="text" required autocomplete="off" class="input_form_sign d_block active_inp" placeholder=" Link Clicks"  />
+                                        </div>
+
+
+                                        <div class="field-wrap">
+                                            <input id="fbcmt" type="text" required autocomplete="off" class="input_form_sign d_block active_inp" placeholder=" Comments"  />
+                                        </div>
+
+                                        <div class="field-wrap">
+                                            <input id="fbshare" type="text" required autocomplete="off" class="input_form_sign d_block active_inp" placeholder=" Shares"  />
+                                        </div>
+
+                                        <div class="field-wrap">
+                                            <input id="fblikeT" type="text" required autocomplete="off" class="input_form_sign d_block active_inp" placeholder=" Total Page Likes"  />
+                                        </div>
+
+                                        <div class="field-wrap">
+                                            <input id="fbposts" type="text" required autocomplete="off" class="input_form_sign d_block active_inp" placeholder=" Number of Posts"  />
+                                        </div>
+
+                                        <button id="fbbtn" type="submit" class="btn_sign"/>Calculate</button>
+
+                                        <div class="field-wrap">
+                                            <input id="fbout" readonly="true" type="text" required autocomplete="off" class="input_form_sign d_block active_inp" placeholder=" FB Engagement" style="margin-bottom: 30px;"  />
+
+                                        </div>
+                                        <div class="field-wrap"  >
+
+                                        </div>
+                                    </form>
+
+                                </div>
+
+                                <div id="in">
+                                    <h1 style="color:black; margin-left: 30%; margin-top: -4%"></h1>
+
+                                    <form action="/" method="post">
+                                        <div class="field-wrap">
+                                            <input id="ineng" type="text" required autocomplete="off" class="input_form_sign d_block active_inp" placeholder=" Average Engagement per Update"  />
+                                        </div>
+
+                                        <div class="field-wrap">
+                                            <input id="intotal" type="text" required autocomplete="off" class="input_form_sign d_block active_inp" placeholder=" Number of Updates"  />
+                                        </div>
+
+
+                                        <button id="inbtn" type="submit" class="btn_sign"/>Calculate</button>
+
+                                        <div class="field-wrap">
+                                            <input id="inout" readonly="true" type="text" required autocomplete="off" class="input_form_sign d_block active_inp" placeholder=" Linkedin Engagement" style="margin-bottom: 30px;"  />
+
+                                        </div>
+                                        <div class="field-wrap"  >
+
+                                        </div>
+                                    </form>
+
+                                </div>
+
+
+                                <div id="twtr">
+                                    <h1 style="color:black; margin-left: 30%; margin-top: -4%"></h1>
+
+                                    <form action="/" method="post">
+                                        <div class="field-wrap">
+                                            <input id="twlike" type="text" required autocomplete="off" class="input_form_sign d_block active_inp" placeholder=" Likes"  />
+                                        </div>
+
+                                        <div class="field-wrap">
+                                            <input id="twretw" type="text" required autocomplete="off" class="input_form_sign d_block active_inp" placeholder=" Retweets"  />
+                                        </div>
+
+
+                                        <div class="field-wrap">
+                                            <input id="twrply" type="text" required autocomplete="off" class="input_form_sign d_block active_inp" placeholder=" Replies"  />
+                                        </div>
+
+                                        <div class="field-wrap">
+                                            <input id="twmen" type="text" required autocomplete="off" class="input_form_sign d_block active_inp" placeholder=" Mentions"  />
+                                        </div>
+
+                                        <div class="field-wrap">
+                                            <input id="twimp" type="text" required autocomplete="off" class="input_form_sign d_block active_inp" placeholder=" Tweeter Impressions"  />
+                                        </div>
+
+                                        <div class="field-wrap">
+                                            <input id="twtw" type="text" required autocomplete="off" class="input_form_sign d_block active_inp" placeholder=" Tweets"  />
+                                        </div>
+
+                                        <button id="twbtn" type="submit" class="btn_sign"/>Calculate</button>
+
+                                        <div class="field-wrap">
+                                            <input id="twout" readonly="true" type="text" required autocomplete="off" class="input_form_sign d_block active_inp" placeholder=" Tweeter Engagement" style="margin-bottom: 30px;"  />
+
+                                        </div>
+                                        <div class="field-wrap"  >
+
+                                        </div>
+                                    </form>
+
+                                </div>
+
+
+                                <div id="inst">
+                                    <h1 style="color:black; margin-left: 30%; margin-top: -4%">Average per Post</h1>
+
+                                    <form action="/" method="post">
+                                        <div class="field-wrap">
+                                            <input id="instlike" type="text" required autocomplete="off" class="input_form_sign d_block active_inp" placeholder=" Likes"  />
+                                        </div>
+
+
+                                        <div class="field-wrap">
+                                            <input id="instcmt" type="text" required autocomplete="off" class="input_form_sign d_block active_inp" placeholder=" Comments"  />
+                                        </div>
+
+                                        <div class="field-wrap">
+                                            <input id="instfoll" type="text" required autocomplete="off" class="input_form_sign d_block active_inp" placeholder=" Followers"  />
+                                        </div>
+
+                                        <div class="field-wrap">
+                                            <input id="instposts" type="text" required autocomplete="off" class="input_form_sign d_block active_inp" placeholder=" Number of Posts"  />
+                                        </div>
+
+                                        <button id="instbtn" type="submit" class="btn_sign"/>Calculate</button>
+
+                                        <div class="field-wrap">
+                                            <input id="instout" readonly="true" type="text" required autocomplete="off" class="input_form_sign d_block active_inp" placeholder=" Instagram Engagement" style="margin-bottom: 30px;"  />
+
+                                        </div>
+                                        <div class="field-wrap"  >
+
+                                        </div>
+                                    </form>
+
+                                </div>
+
+
+                                <div id="pin">
+                                    <h1 style="color:black; margin-left: 30%; margin-top: -4%">Average per Board </h1>
+
+                                    <form action="/" method="post">
+                                        <div class="field-wrap">
+                                            <input id="pins" type="text" required autocomplete="off" class="input_form_sign d_block active_inp" placeholder=" Pins"  />
+                                        </div>
+
+
+                                        <div class="field-wrap">
+                                            <input id="repins" type="text" required autocomplete="off" class="input_form_sign d_block active_inp" placeholder=" Re-Pins"  />
+                                        </div>
+
+                                        <div class="field-wrap">
+                                            <input id="pinfoll" type="text" required autocomplete="off" class="input_form_sign d_block active_inp" placeholder=" Followers"  />
+                                        </div>
+
+                                        <div class="field-wrap">
+                                            <input id="pinposts" type="text" required autocomplete="off" class="input_form_sign d_block active_inp" placeholder=" Number of Posts"  />
+                                        </div>
+
+                                        <button id="pinbtn" type="submit" class="btn_sign"/>Calculate</button>
+
+                                        <div class="field-wrap">
+                                            <input id="pinout" readonly="true" type="text" required autocomplete="off" class="input_form_sign d_block active_inp" placeholder=" Pintrest Engagement" style="margin-bottom: 30px;"  />
+
+                                        </div>
+                                        <div class="field-wrap"  >
+
+                                        </div>
+                                    </form>
+
+                                </div>
+
+                                <div id="gp">
+                                    <h1 style="color:black; margin-left: 30%; margin-top: -4%">Average per Post </h1>
+
+                                    <form action="/" method="post">
+                                        <div class="field-wrap">
+                                            <input id="g1" type="text" required autocomplete="off" class="input_form_sign d_block active_inp" placeholder=" +1"  />
+                                        </div>
+
+                                        <div class="field-wrap">
+                                            <input id="gcmnts" type="text" required autocomplete="off" class="input_form_sign d_block active_inp" placeholder=" Comments"  />
+                                        </div>
+                                        <div class="field-wrap">
+                                            <input id="greshare" type="text" required autocomplete="off" class="input_form_sign d_block active_inp" placeholder=" Re-Share"  />
+                                        </div>
+
+                                        <div class="field-wrap">
+                                            <input id="gfoll" type="text" required autocomplete="off" class="input_form_sign d_block active_inp" placeholder=" Followers"  />
+                                        </div>
+
+                                        <div class="field-wrap">
+                                            <input id="gposts" type="text" required autocomplete="off" class="input_form_sign d_block active_inp" placeholder=" Number of Posts"  />
+                                        </div>
+
+                                        <button id="gbtn" type="submit" class="btn_sign"/>Calculate</button>
+
+                                        <div class="field-wrap">
+                                            <input id="gout" readonly="true" type="text" required autocomplete="off" class="input_form_sign d_block active_inp" placeholder=" Google+ Engagement" style="margin-bottom: 30px;"  />
+
+                                        </div>
+                                        <div class="field-wrap"  >
+
+                                        </div>
+                                    </form>
+
+                                </div>
+
+
+                                <div id="utu">
+
+
+                                    <form action="/" method="post">
+                                        <div class="field-wrap">
+                                            <input id="utulike" type="text" required autocomplete="off" class="input_form_sign d_block active_inp" placeholder=" Likes"  />
+                                        </div>
+                                        <div class="field-wrap">
+                                            <input id="utudlike" type="text" required autocomplete="off" class="input_form_sign d_block active_inp" placeholder=" Dislikes"  />
+                                        </div>
+
+                                        <div class="field-wrap">
+                                            <input id="utuclik" type="text" required autocomplete="off" class="input_form_sign d_block active_inp" placeholder=" Link Clicks"  />
+                                        </div>
+
+
+                                        <div class="field-wrap">
+                                            <input id="utucmt" type="text" required autocomplete="off" class="input_form_sign d_block active_inp" placeholder=" Comments"  />
+                                        </div>
+
+                                        <div class="field-wrap">
+                                            <input id="utushare" type="text" required autocomplete="off" class="input_form_sign d_block active_inp" placeholder=" Shares"  />
+                                        </div>
+
+                                        <div class="field-wrap">
+                                            <input id="utufvrt" type="text" required autocomplete="off" class="input_form_sign d_block active_inp" placeholder=" Favorits"  />
+                                        </div>
+
+                                        <div class="field-wrap">
+                                            <input id="utunew" type="text" required autocomplete="off" class="input_form_sign d_block active_inp" placeholder=" New Subscribers"  />
+                                        </div>
+                                        <div class="field-wrap">
+                                            <input id="ututot" type="text" required autocomplete="off" class="input_form_sign d_block active_inp" placeholder=" Total Views"  />
+                                        </div>
+
+                                        <button id="utubtn" type="submit" class="btn_sign"/>Calculate</button>
+
+                                        <div class="field-wrap">
+                                            <input id="utuout" readonly="true" type="text" required autocomplete="off" class="input_form_sign d_block active_inp" placeholder=" Youtube Engagement" style="margin-bottom: 30px;"  />
+
+                                        </div>
+                                        <div class="field-wrap"  >
+
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div><!-- tab-content -->
+
+                        </form>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+
+
+<footer>
+    <div class="container">
+        <p>Copyright &copy; 2017 InfiniGrow Ltd. All rights reserved.</p>
+        <ul class="list-inline">
+
+        </ul>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="vendor/jquery/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+<!-- Theme JavaScript -->
+<script src="js/new-age.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+
+</html>

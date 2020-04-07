@@ -1,0 +1,139 @@
+@import "../global/mixins.css";
+
+.item {
+    height: 270px;
+    width: 260px;
+    box-sizing: border-box;
+    user-select: none;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px #f8f8f8;
+    border-radius: 5px;
+    -moz-box-sizing: border-box;
+    box-shadow: -2px 1px 12px 1px #e0e0e0;
+    margin: 15px 30px;
+    display: inline-block;
+}
+
+.inner {
+    display: flex;
+    composes: item;
+
+    color: #354052;
+    margin: 50px 50px;
+
+}
+
+.top {
+    background: #0099CC;
+    height: 50%;
+    border-radius: 8px 8px 0 0;
+}
+
+.bottom {
+    background: white;
+    height: 50%;
+    border-radius: 0 0 8px 8px;
+}
+
+.title {
+    height: 63px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /* autoprefixer: off */
+    -webkit-box-orient: vertical;
+    /* autoprefixer: on */
+    line-height: 32px;
+    width: 200px;
+}
+
+.circle {
+    background: white;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    top: 13px;
+    position: relative;
+}
+
+.icon {
+    height: 30px;
+    width: 30px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 35px;
+    border-right: 1px solid white;
+    flex-shrink: 0;
+    flex-grow: 0;
+    position: relative;
+    top: 26px;
+    left: 15px;
+}
+
+.menu {
+    height: 32px;
+    width: 25px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    cursor: pointer;
+}
+
+.number {
+    background: #24B10E;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    left: 34px;
+    top: -20px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+}
+
+@mixin icon-nodpi campaign:menu, /assets/more;
+
+.cols {
+    display: flex;
+}
+
+.col-left {
+    flex-grow: 0;
+}
+
+.col-right {
+    margin-left: auto;
+    flex-shrink: 0;
+}
+
+.col-center {
+    max-width: 145px;
+    margin: 0 auto;
+    flex-grow: 1;
+}
+
+.row {
+    padding: 7px 12px;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.status {
+    color: #24B10E;
+    padding: 6px 8px;
+    border: 2px solid #ced0da;
+    display: inline-block;
+    font-size: 16px;
+    width: 97px;
+}
+
+.time {
+    justify-content: center;
+    margin-bottom: 6px !important;
+    text-transform: none !important;
+    letter-spacing: normal !important;
+}
